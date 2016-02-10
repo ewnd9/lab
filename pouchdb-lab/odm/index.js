@@ -55,12 +55,14 @@ Model.prototype.update = function(id, data) {
     );
 };
 
-Model.prototype.getOrFetch = function(id, fetch) {
+Model.prototype.getOrInit = function(id, init) {
   return this.get(id)
     .then(null,
       err => this.on404(
         err,
-        () => fetch().then(data => this.create(id, data))
+        () => init().then(data => this.create(id, data))
       )
     );
 };
+
+Model.prototype.remove = doc => Model.db.remove(doc);
