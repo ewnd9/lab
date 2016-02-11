@@ -1,0 +1,1026 @@
+alertify.js
+  ^1.0.8
+    ewnd9/media-center
+angular
+  ^1.5.0-beta.0
+    ewnd9/ng2-contacts-demo
+  ^1.3.16
+    ewnd9/xavier
+angular-animate
+  ^1.5.0-beta.0
+    ewnd9/ng2-contacts-demo
+angular-aria
+  ^1.5.0-beta.0
+    ewnd9/ng2-contacts-demo
+angular-ui-router
+  ^0.2.15
+    ewnd9/xavier
+angular2
+  2.0.0-alpha.37
+    ewnd9/ng2-contacts-demo
+async
+  *
+    ewnd9/OpenSRTJS
+  ^0.9.0
+    ewnd9/player
+autoprefixer
+  ^6.2.3
+    ewnd9/media-center
+ava
+  ^0.0.4
+    ewnd9/brightness-cli
+  ^0.9.1
+    ewnd9/dictionary-cli
+    ewnd9/media-center
+    ewnd9/the-feed
+  ^0.11.0
+    ewnd9/inquirer-bluebird
+    ewnd9/inquirer-credentials
+    ewnd9/inquirer-test
+  ^0.9.0
+    ewnd9/show-episode-format
+    ewnd9/trakt-cli
+  ^0.8.0
+    ewnd9/split-torrent-release
+    ewnd9/trakt-utils
+babel
+  ^5.8.23
+    ewnd9/badtaste
+  ^5.2.17
+    ewnd9/player
+  ^5.8.5
+    ewnd9/pw3
+  ^5.8.21
+    ewnd9/rutor-notify
+    ewnd9/split-torrent-release
+    ewnd9/split-tracklist
+    ewnd9/trakt-utils
+    ewnd9/universal-api
+    ewnd9/universal-api-test
+    ewnd9/vk-universal-api
+babel-cli
+  ^6.4.0
+    ewnd9/dictionary-cli
+    ewnd9/media-center
+    ewnd9/show-episode-format
+    ewnd9/the-feed
+    ewnd9/trakt-cli
+babel-core
+  ^6.4.0
+    ewnd9/dictionary-cli
+    ewnd9/media-center
+    ewnd9/show-episode-format
+    ewnd9/the-feed
+    ewnd9/trakt-cli
+  ^5.4.7
+    ewnd9/xavier-browsers
+babel-eslint
+  ^5.0.0-beta9
+    ewnd9/media-center
+    ewnd9/trakt-cli
+babel-loader
+  ^6.2.1
+    ewnd9/media-center
+    ewnd9/the-feed
+  ^5.4.0
+    ewnd9/universal-api-test
+  ^5.1.3
+    ewnd9/xavier-browsers
+babel-plugin-lodash
+  ^1.1.0
+    ewnd9/dictionary-cli
+babel-plugin-transform-runtime
+  ^6.4.0
+    ewnd9/media-center
+babel-polyfill
+  ^6.3.14
+    ewnd9/dictionary-cli
+  ^6.5.0
+    ewnd9/media-center
+  ^6.0.16
+    ewnd9/pw3
+babel-preset-es2015
+  ^6.3.13
+    ewnd9/dictionary-cli
+    ewnd9/media-center
+    ewnd9/show-episode-format
+    ewnd9/the-feed
+    ewnd9/trakt-cli
+babel-preset-react
+  ^6.3.13
+    ewnd9/media-center
+    ewnd9/the-feed
+babel-preset-stage-0
+  ^6.3.13
+    ewnd9/media-center
+    ewnd9/the-feed
+babel-register
+  ^6.4.3
+    ewnd9/dictionary-cli
+blessed
+  ^0.1.80
+    ewnd9/badtaste
+bluebird
+  ^2.10.0
+    ewnd9/badtaste
+    ewnd9/universal-api
+    ewnd9/workout-cli
+  ^2.9.32
+    ewnd9/brightness-interactive-cli
+    ewnd9/telegram-bot-cli
+  
+    ewnd9/couchdb-dbperuser-provisioning
+  ^2.9.34
+    ewnd9/dictionary-cli
+    ewnd9/watchtower-cli
+  ^3.1.5
+    ewnd9/inquirer-bluebird
+  ^3.0.0
+    ewnd9/inquirer-credentials
+  ^2.10.2
+    ewnd9/inquirer-menu
+    ewnd9/media-center
+    ewnd9/rutor-notify
+  ^3.0.6
+    ewnd9/the-feed
+  ^3.1.1
+    ewnd9/trakt-utils
+  ^2.9.27
+    ewnd9/xavier
+    ewnd9/xavier-browsers
+body-parser
+  ^1.14.2
+    ewnd9/media-center
+bootstrap
+  ^3.3.6
+    ewnd9/media-center
+brightness
+  ^1.1.0
+    ewnd9/brightness-cli
+  ^2.0.1
+    ewnd9/brightness-interactive-cli
+browserify
+  ^13.0.0
+    ewnd9/universal-api-test
+chai
+  ^3.3.0
+    ewnd9/badtaste
+  ^3.0.0
+    ewnd9/dot-file-config
+    ewnd9/telegram-bot-cli
+  ^3.2.0
+    ewnd9/dropbox-symlink
+    ewnd9/inquirer-menu
+    ewnd9/media-center
+    ewnd9/progress-control
+    ewnd9/pw3
+    ewnd9/rutor-notify
+    ewnd9/split-tracklist
+    ewnd9/universal-api
+    ewnd9/universal-api-test
+chalk
+  ^1.1.1
+    ewnd9/dictionary-cli
+    ewnd9/rutor-notify
+    ewnd9/the-feed
+    ewnd9/trakt-cli
+  ^1.0.0
+    ewnd9/generator-ewnd9-npm
+  ^1.1.0
+    ewnd9/watchtower-cli
+cheerio
+  ^0.13.1
+    ewnd9/node-eztv
+  ^0.19.0
+    ewnd9/rutor-notify
+    ewnd9/the-feed
+  ^0.18.0
+    ewnd9/thepiratebay
+chokidar
+  ^1.4.2
+    ewnd9/media-center
+classnames
+  ^2.2.3
+    ewnd9/media-center
+  ^2.2.1
+    ewnd9/the-feed
+cli-cursor
+  ^1.0.1
+    ewnd9/progress-control
+clone
+  ^1.0.2
+    ewnd9/inquirer-question
+co
+  ^3.1.0
+    ewnd9/thepiratebay
+co-mocha
+  0.0.4
+    ewnd9/thepiratebay
+coffee-script
+  >= 1.1.1
+    ewnd9/node-notes
+  git://github.com/xixixao/coffee-script.git#35ca45d13a784af508095214547b8bd57b33a40c
+    ewnd9/thepiratebay
+colors
+  *
+    ewnd9/node-notes
+  ^1.0.3
+    ewnd9/simple-shell
+combokeys
+  ^2.4.3
+    ewnd9/xavier
+concat-stream
+  ^1.5.0
+    ewnd9/brightness-cli
+    ewnd9/dictionary-cli
+  ^1.5.1
+    ewnd9/inquirer-test
+connect-livereload
+  ^0.5.3
+    ewnd9/ng2-contacts-demo
+copy-paste
+  ^1.1.4
+    ewnd9/pw3
+cors
+  ^2.7.1
+    ewnd9/media-center
+coveralls
+  ^2.11.6
+    ewnd9/dictionary-cli
+    ewnd9/split-torrent-release
+  ^2.11.3
+    ewnd9/pw3
+css-loader
+  ^0.23.0
+    ewnd9/media-center
+    ewnd9/the-feed
+debug
+  ^2.1.0
+    ewnd9/player
+del
+  ^1.1.1
+    ewnd9/ng2-contacts-demo
+detect-node
+  ^2.0.3
+    ewnd9/OpenSRTJS
+    ewnd9/universal-api
+dot-file-config
+  ^0.5.0
+    ewnd9/badtaste
+    ewnd9/media-center
+    ewnd9/workout-cli
+  ^0.6.0
+    ewnd9/dictionary-cli
+  ^0.6.1
+    ewnd9/inquirer-credentials
+  0.0.2
+    ewnd9/telegram-bot-cli
+  0.0.1
+    ewnd9/xavier
+dotenv
+  ^1.2.0
+    ewnd9/rutor-notify
+electron-prebuilt
+  ^0.35.2
+    ewnd9/xavier
+electron-rebuild
+  ^1.0.2
+    ewnd9/xavier
+es6-module-loader
+  ^0.15.0
+    ewnd9/ng2-contacts-demo
+es6-promise
+  2.0.1
+    ewnd9/thepiratebay
+eslint
+  ^1.10.3
+    ewnd9/media-center
+    ewnd9/trakt-cli
+eslint-plugin-react
+  ^3.14.0
+    ewnd9/media-center
+exec-sync
+  0.1.6
+    ewnd9/git-stats
+exit-hook
+  ^1.1.1
+    ewnd9/badtaste
+    ewnd9/media-center
+expand-tilde
+  1.2.0
+    ewnd9/the-feed
+express
+  ^4.13.3
+    ewnd9/media-center
+    ewnd9/the-feed
+  ~4.13.1
+    ewnd9/ng2-contacts-demo
+  ^4.12.4
+    ewnd9/xavier
+express-cors
+  0.0.3
+    ewnd9/the-feed
+extract-text-webpack-plugin
+  ^1.0.1
+    ewnd9/media-center
+figlet
+  ^1.1.0
+    ewnd9/simple-shell
+file-loader
+  ^0.8.5
+    ewnd9/media-center
+    ewnd9/the-feed
+fkill
+  ^3.1.0
+    ewnd9/media-center
+follow-redirects
+  0.0.7
+    ewnd9/player
+fs-mock
+  ^1.2.1
+    ewnd9/dropbox-symlink
+gister
+  0.0.5
+    ewnd9/git-stats
+git-validate
+  ^2.0.0
+    ewnd9/postcommit-hook
+github-search-api
+  0.0.3
+    ewnd9/watchtower-cli
+glob
+  ^5.0.13
+    ewnd9/telegram-bot-cli
+globby
+  ^4.0.0
+    ewnd9/media-center
+got
+  ^5.3.1
+    ewnd9/dictionary-cli
+  ^6.0.1
+    ewnd9/media-center
+  ^6.1.1
+    ewnd9/pw3
+  ^4.2.0
+    ewnd9/rutor-notify
+  ^5.1.0
+    ewnd9/the-feed
+  ^6.0.0
+    ewnd9/trakt-utils
+grunt-cli
+  ^0.1.13
+    ewnd9/simple-shell
+grunt-contrib-jshint
+  ^0.10.0
+    ewnd9/simple-shell
+grunt-contrib-nodeunit
+  ^0.4.1
+    ewnd9/simple-shell
+grunt-contrib-watch
+  ^0.6.1
+    ewnd9/simple-shell
+grunt-mocha-cli
+  ^1.11.0
+    ewnd9/simple-shell
+gulp
+  ^3.8.10
+    ewnd9/jr-crop
+  ^3.8.11
+    ewnd9/ng2-contacts-demo
+gulp-bump
+  ^0.3.1
+    ewnd9/ng2-contacts-demo
+gulp-concat
+  ^2.4.2
+    ewnd9/jr-crop
+  ^2.5.2
+    ewnd9/ng2-contacts-demo
+gulp-filter
+  ^2.0.2
+    ewnd9/ng2-contacts-demo
+gulp-header
+  ^1.2.2
+    ewnd9/jr-crop
+gulp-inject
+  ^1.3.1
+    ewnd9/ng2-contacts-demo
+gulp-inline-ng2-template
+  ^0.0.7
+    ewnd9/ng2-contacts-demo
+gulp-jshint
+  ^1.9.0
+    ewnd9/jr-crop
+gulp-minify-css
+  ^1.1.6
+    ewnd9/ng2-contacts-demo
+gulp-minify-html
+  ^1.0.3
+    ewnd9/ng2-contacts-demo
+gulp-plumber
+  ~1.0.1
+    ewnd9/ng2-contacts-demo
+gulp-rename
+  ^1.2.0
+    ewnd9/jr-crop
+gulp-sass
+  ^1.2.4
+    ewnd9/jr-crop
+gulp-shell
+  ~0.4.3
+    ewnd9/ng2-contacts-demo
+gulp-sourcemaps
+  ~1.5.2
+    ewnd9/ng2-contacts-demo
+gulp-template
+  ^3.0.0
+    ewnd9/ng2-contacts-demo
+gulp-typescript
+  ~2.8.2
+    ewnd9/ng2-contacts-demo
+gulp-uglify
+  ^1.0.2
+    ewnd9/jr-crop
+  ^1.2.0
+    ewnd9/ng2-contacts-demo
+gulp-watch
+  ^4.2.4
+    ewnd9/ng2-contacts-demo
+hasha
+  ^2.2.0
+    ewnd9/cached-npm-install
+history
+  ^1.17.0
+    ewnd9/the-feed
+home
+  ^0.1.3
+    ewnd9/player
+id3js
+  ^1.1.3
+    ewnd9/badtaste
+inquirer
+  ^0.8.5
+    ewnd9/brightness-interactive-cli
+    ewnd9/telegram-bot-cli
+  ^0.11.4
+    ewnd9/inquirer-bluebird
+    ewnd9/inquirer-test
+  ^0.8.0
+    ewnd9/simple-shell
+inquirer-bluebird
+  ^1.0.1
+    ewnd9/inquirer-credentials
+    ewnd9/watchtower-cli
+  ^1.0.2
+    ewnd9/inquirer-question
+  ^1.0.6
+    ewnd9/pw3
+  ^1.0.0
+    ewnd9/telegram-bot-cli
+inquirer-credentials
+  ^1.2.0
+    ewnd9/media-center
+  ^2.0.0
+    ewnd9/trakt-cli
+inquirer-menu
+  ^0.2.0
+    ewnd9/badtaste
+  0.2.0
+    ewnd9/workout-cli
+inquirer-question
+  ^1.1.1
+    ewnd9/badtaste
+    ewnd9/media-center
+    ewnd9/the-feed
+  ^1.1.0
+    ewnd9/inquirer-menu
+    ewnd9/workout-cli
+inquirer-test
+  ^1.0.0
+    ewnd9/inquirer-bluebird
+  ^1.0.2
+    ewnd9/inquirer-credentials
+intel
+  ^1.0.2
+    ewnd9/badtaste
+ip
+  ^0.3.3
+    ewnd9/xavier
+isomorphic-fetch
+  ^2.2.0
+    ewnd9/media-center
+    ewnd9/the-feed
+istanbul
+  ^0.3.17
+    ewnd9/pw3
+jade
+  1.8.2
+    ewnd9/git-stats
+  ^1.10.0
+    ewnd9/xavier
+jasmine-core
+  ~2.3.4
+    ewnd9/ng2-contacts-demo
+jquery
+  ^2.1.4
+    ewnd9/xavier
+    ewnd9/xavier-browsers
+js-yaml
+  ^3.4.6
+    ewnd9/the-feed
+jshint
+  *
+    ewnd9/postcommit-hook
+jshint-stylish
+  ^1.0.0
+    ewnd9/simple-shell
+karma
+  ~0.12.37
+    ewnd9/ng2-contacts-demo
+  ^0.13.19
+    ewnd9/universal-api-test
+karma-chrome-launcher
+  ~0.2.0
+    ewnd9/ng2-contacts-demo
+  ^0.2.2
+    ewnd9/universal-api-test
+karma-env-preprocessor
+  ^0.1.1
+    ewnd9/universal-api-test
+karma-firefox-launcher
+  ^0.1.7
+    ewnd9/universal-api-test
+karma-jasmine
+  ~0.3.6
+    ewnd9/ng2-contacts-demo
+karma-mocha
+  ^0.2.1
+    ewnd9/universal-api-test
+karma-phantomjs-launcher
+  ^1.0.0
+    ewnd9/universal-api-test
+karma-safari-launcher
+  ^0.1.1
+    ewnd9/universal-api-test
+karma-sauce-launcher
+  ^0.3.0
+    ewnd9/universal-api-test
+    ewnd9/universal-api-test
+karma-webpack
+  ^1.7.0
+    ewnd9/universal-api-test
+kexec
+  ^1.2.0
+    ewnd9/watchtower-cli
+keypress
+  ^0.2.1
+    ewnd9/media-center
+    ewnd9/progress-control
+lame
+  ^1.2.2
+    ewnd9/player
+load-grunt-tasks
+  ^1.0.0
+    ewnd9/simple-shell
+lodash
+  ^3.10.1
+    ewnd9/badtaste
+    ewnd9/dictionary-cli
+    ewnd9/the-feed
+    ewnd9/trakt-utils
+    ewnd9/watchtower-cli
+  ^3.10.0
+    ewnd9/OpenSRTJS
+    ewnd9/telegram-bot-cli
+  ^3.6.0
+    ewnd9/simple-shell
+  ^3.9.3
+    ewnd9/xavier
+    ewnd9/xavier-browsers
+marked
+  0.3.5
+    ewnd9/nodejs.ru
+materialize-css
+  ^0.97.1
+    ewnd9/ng2-contacts-demo
+meow
+  ^3.4.1
+    ewnd9/badtaste
+    ewnd9/media-center
+  ^3.3.0
+    ewnd9/brightness-cli
+    ewnd9/pw3
+    ewnd9/workout-cli
+  ^3.7.0
+    ewnd9/dictionary-cli
+    ewnd9/the-feed
+minimist
+  ^1.1.1
+    ewnd9/telegram-bot-cli
+  ^1.1.3
+    ewnd9/watchtower-cli
+mkdirp
+  ^0.5.1
+    ewnd9/media-center
+mocha
+  ^2.3.3
+    ewnd9/badtaste
+  ^2.2.5
+    ewnd9/dot-file-config
+    ewnd9/dropbox-symlink
+    ewnd9/media-center
+    ewnd9/progress-control
+    ewnd9/pw3
+    ewnd9/rutor-notify
+    ewnd9/split-tracklist
+    ewnd9/telegram-bot-cli
+    ewnd9/universal-api
+    ewnd9/universal-api-test
+  *
+    ewnd9/generator-ewnd9-npm
+  ^2.3.0
+    ewnd9/inquirer-menu
+  ^1.21.4
+    ewnd9/thepiratebay
+mock-fs
+  ^3.6.0
+    ewnd9/media-center
+moment
+  2.8.1
+    ewnd9/git-stats
+  ^2.11.0
+    ewnd9/media-center
+  ^2.10.6
+    ewnd9/rutor-notify
+    ewnd9/the-feed
+    ewnd9/workout-cli
+  ^2.11.1
+    ewnd9/trakt-utils
+morgan
+  ^1.6.1
+    ewnd9/media-center
+    ewnd9/the-feed
+  ^1.5.3
+    ewnd9/xavier
+musicmetadata
+  1.0.1
+    ewnd9/player
+newrelic
+  ^1.22.2
+    ewnd9/rutor-notify
+nock
+  ^3.6.0
+    ewnd9/media-center
+  ^3.4.0
+    ewnd9/the-feed
+  ^5.2.1
+    ewnd9/trakt-utils
+node-cache
+  ^3.1.0
+    ewnd9/media-center
+node-crontab
+  0.0.8
+    ewnd9/workout-cli
+node-libs-browser
+  ^0.5.2
+    ewnd9/xavier-browsers
+node-notifier
+  ^4.4.0
+    ewnd9/media-center
+  ^4.2.3
+    ewnd9/workout-cli
+node-static
+  ~0.7.6
+    ewnd9/jr-crop
+nodemon
+  ^1.8.1
+    ewnd9/media-center
+    ewnd9/show-episode-format
+    ewnd9/split-torrent-release
+    ewnd9/trakt-cli
+    ewnd9/trakt-utils
+  ^1.4.1
+    ewnd9/the-feed
+npm-run-all
+  ^1.4.0
+    ewnd9/media-center
+  ^1.3.4
+    ewnd9/the-feed
+npmconf
+  ^2.1.2
+    ewnd9/generator-ewnd9-npm
+nyc
+  ^5.3.0
+    ewnd9/dictionary-cli
+  ^4.0.1
+    ewnd9/split-torrent-release
+object-assign
+  ^4.0.1
+    ewnd9/generator-ewnd9-npm
+omxplayer
+  0.0.1
+    ewnd9/media-center
+opbeat
+  ^3.1.4
+    ewnd9/the-feed
+open
+  0.0.5
+    ewnd9/ng2-contacts-demo
+opn
+  ^3.0.2
+    ewnd9/watchtower-cli
+phantomjs-prebuilt
+  ^2.1.3
+    ewnd9/universal-api-test
+pinkie-promise
+  ^2.0.0
+    ewnd9/inquirer-test
+player
+  ^0.6.1
+    ewnd9/badtaste
+playmusic
+  ^2.1.0
+    ewnd9/badtaste
+pm2
+  ^0.14.5
+    ewnd9/workout-cli
+pool_stream
+  0.0.2
+    ewnd9/player
+postcss-loader
+  ^0.8.0
+    ewnd9/media-center
+pouchdb
+  ^5.1.0
+    ewnd9/media-center
+    ewnd9/the-feed
+  ^5.0.0
+    ewnd9/rutor-notify
+pouchdb-find
+  ^0.8.0
+    ewnd9/the-feed
+pouchdb-hoodie-api
+  ^1.6.0
+    ewnd9/rutor-notify
+    ewnd9/the-feed
+pre-commit
+  ^1.1.2
+    ewnd9/media-center
+precss
+  ^1.4.0
+    ewnd9/media-center
+pretty-bytes
+  ^2.0.1
+    ewnd9/pw3
+progress
+  ^1.1.8
+    ewnd9/progress-control
+progress-control
+  ^1.0.0
+    ewnd9/brightness-cli
+proxyquire
+  ^1.6.0
+    ewnd9/dropbox-symlink
+    ewnd9/telegram-bot-cli
+  ^1.7.3
+    ewnd9/media-center
+react
+  ^0.14.4
+    ewnd9/media-center
+  ^0.14.3
+    ewnd9/the-feed
+react-dom
+  ^0.14.4
+    ewnd9/media-center
+  ^0.14.3
+    ewnd9/the-feed
+react-hot-loader
+  ^1.3.0
+    ewnd9/media-center
+react-infinite-scroll
+  ^0.1.5
+    ewnd9/the-feed
+react-modal
+  ^0.6.1
+    ewnd9/media-center
+react-redux
+  ^4.0.6
+    ewnd9/the-feed
+react-router
+  ^1.0.3
+    ewnd9/the-feed
+react-select
+  ^1.0.0-beta8
+    ewnd9/media-center
+react-spinkit
+  ^1.1.4
+    ewnd9/media-center
+react-swipeable
+  ^3.1.0
+    ewnd9/the-feed
+react-tooltip
+  ^1.0.3
+    ewnd9/the-feed
+redux
+  ^3.0.5
+    ewnd9/the-feed
+redux-logger
+  ^2.3.1
+    ewnd9/the-feed
+redux-simple-router
+  ^1.0.2
+    ewnd9/the-feed
+redux-thunk
+  ^1.0.3
+    ewnd9/the-feed
+reflect-metadata
+  0.1.0
+    ewnd9/ng2-contacts-demo
+request
+  
+    ewnd9/couchdb-dbperuser-provisioning
+  ^2.34.0
+    ewnd9/node-eztv
+  ^2.53.0
+    ewnd9/thepiratebay
+  ^2.57.0
+    ewnd9/xavier
+rollbar
+  ^0.5.8
+    ewnd9/rutor-notify
+run-sequence
+  ^1.1.0
+    ewnd9/ng2-contacts-demo
+script-loader
+  ^0.6.1
+    ewnd9/media-center
+semver
+  ^4.3.6
+    ewnd9/ng2-contacts-demo
+serve-static
+  ^1.9.2
+    ewnd9/ng2-contacts-demo
+should
+  ^4.0.4
+    ewnd9/thepiratebay
+show-episode-format
+  ^1.0.2
+    ewnd9/pw3
+  ^1.0.1
+    ewnd9/trakt-cli
+sinon
+  ^1.17.2
+    ewnd9/media-center
+socket.io
+  ^1.4.2
+    ewnd9/media-center
+  ^1.3.7
+    ewnd9/xavier
+socket.io-client
+  ^1.4.2
+    ewnd9/media-center
+  ^1.3.5
+    ewnd9/xavier-browsers
+source-map-support
+  ^0.4.0
+    ewnd9/media-center
+    ewnd9/the-feed
+spawn-args
+  ^0.1.0
+    ewnd9/watchtower-cli
+speaker
+  ^0.2.6
+    ewnd9/player
+split-torrent-release
+  ^1.1.0
+    ewnd9/media-center
+split-tracklist
+  ^1.1.1
+    ewnd9/badtaste
+stream-series
+  ^0.1.1
+    ewnd9/ng2-contacts-demo
+string
+  ^1.8.0
+    ewnd9/node-eztv
+style-loader
+  ^0.13.0
+    ewnd9/media-center
+    ewnd9/the-feed
+superagent
+  ^1.4.0
+    ewnd9/universal-api
+superagent-jsonp
+  0.0.5
+    ewnd9/universal-api
+swig
+  ^1.4.2
+    ewnd9/git-stats
+  1.4.2
+    ewnd9/nodejs.ru
+symlink-or-copy
+  ^1.0.1
+    ewnd9/dropbox-symlink
+systemjs
+  ^0.18.17
+    ewnd9/ng2-contacts-demo
+systemjs-builder
+  ^0.13.6
+    ewnd9/ng2-contacts-demo
+table
+  ^3.7.4
+    ewnd9/the-feed
+telegram-bot-api
+  ^0.3.0
+    ewnd9/telegram-bot-cli
+time-grunt
+  ^1.0.0
+    ewnd9/simple-shell
+tiny-lr
+  ^0.1.6
+    ewnd9/ng2-contacts-demo
+trakt-utils
+  ^0.3.0
+    ewnd9/media-center
+    ewnd9/trakt-cli
+tsd
+  ^0.6.4
+    ewnd9/ng2-contacts-demo
+twitter
+  ^1.2.5
+    ewnd9/rutor-notify
+    ewnd9/the-feed
+typescript
+  ~1.6.0
+    ewnd9/ng2-contacts-demo
+underscore
+  ~1.6.0
+    ewnd9/player
+underscore-plus
+  1.x
+    ewnd9/expand-selection
+universal-api
+  ^0.2.0
+    ewnd9/vk-universal-api
+universal-api-test
+  0.0.2
+    ewnd9/vk-universal-api
+update-notifier
+  ^0.5.0
+    ewnd9/badtaste
+  ^0.6.0
+    ewnd9/dictionary-cli
+    ewnd9/trakt-cli
+url-loader
+  ^0.5.7
+    ewnd9/media-center
+user-home
+  ^2.0.0
+    ewnd9/cached-npm-install
+    ewnd9/dot-file-config
+    ewnd9/dropbox-symlink
+    ewnd9/generator-ewnd9-npm
+    ewnd9/inquirer-credentials
+    ewnd9/media-center
+    ewnd9/the-feed
+uuid
+  
+    ewnd9/couchdb-dbperuser-provisioning
+vk-universal-api
+  0.0.2
+    ewnd9/badtaste
+    ewnd9/the-feed
+webpack
+  ^1.12.9
+    ewnd9/media-center
+    ewnd9/the-feed
+  ^1.12.12
+    ewnd9/universal-api-test
+  ^1.9.10
+    ewnd9/xavier-browsers
+webpack-dev-server
+  ^1.14.0
+    ewnd9/media-center
+    ewnd9/the-feed
+x-ray
+  ^2.0.2
+    ewnd9/the-feed
+x11
+  ^2.0.2
+    ewnd9/media-center
+xmlrpc
+  latest
+    ewnd9/OpenSRTJS
+yargs
+  ^3.25.0
+    ewnd9/ng2-contacts-demo
+yeoman-generator
+  ^0.19.0
+    ewnd9/generator-ewnd9-eslint
+    ewnd9/generator-ewnd9-npm
+yosay
+  ^1.0.2
+    ewnd9/generator-ewnd9-eslint
+    ewnd9/generator-ewnd9-npm
+zone.js
+  ^0.4.1
+    ewnd9/ng2-contacts-demo
