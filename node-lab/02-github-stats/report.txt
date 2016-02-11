@@ -2,33 +2,15 @@ alertify.js
   ^1.0.8
     ewnd9/media-center
 angular
-  ^1.5.0-beta.0
-    ewnd9/ng2-contacts-demo
   ^1.3.16
     ewnd9/xavier
-angular-animate
-  ^1.5.0-beta.0
-    ewnd9/ng2-contacts-demo
-angular-aria
-  ^1.5.0-beta.0
-    ewnd9/ng2-contacts-demo
 angular-ui-router
   ^0.2.15
     ewnd9/xavier
-angular2
-  2.0.0-alpha.37
-    ewnd9/ng2-contacts-demo
-async
-  *
-    ewnd9/OpenSRTJS
-  ^0.9.0
-    ewnd9/player
 autoprefixer
   ^6.2.3
     ewnd9/media-center
 ava
-  ^0.0.4
-    ewnd9/brightness-cli
   ^0.9.1
     ewnd9/dictionary-cli
     ewnd9/media-center
@@ -46,8 +28,6 @@ ava
 babel
   ^5.8.23
     ewnd9/badtaste
-  ^5.2.17
-    ewnd9/player
   ^5.8.5
     ewnd9/pw3
   ^5.8.21
@@ -128,8 +108,6 @@ bluebird
   ^2.9.32
     ewnd9/brightness-interactive-cli
     ewnd9/telegram-bot-cli
-  
-    ewnd9/couchdb-dbperuser-provisioning
   ^2.9.34
     ewnd9/dictionary-cli
     ewnd9/watchtower-cli
@@ -155,8 +133,6 @@ bootstrap
   ^3.3.6
     ewnd9/media-center
 brightness
-  ^1.1.0
-    ewnd9/brightness-cli
   ^2.0.1
     ewnd9/brightness-interactive-cli
 browserify
@@ -189,13 +165,9 @@ chalk
   ^1.1.0
     ewnd9/watchtower-cli
 cheerio
-  ^0.13.1
-    ewnd9/node-eztv
   ^0.19.0
     ewnd9/rutor-notify
     ewnd9/the-feed
-  ^0.18.0
-    ewnd9/thepiratebay
 chokidar
   ^1.4.2
     ewnd9/media-center
@@ -210,34 +182,14 @@ cli-cursor
 clone
   ^1.0.2
     ewnd9/inquirer-question
-co
-  ^3.1.0
-    ewnd9/thepiratebay
-co-mocha
-  0.0.4
-    ewnd9/thepiratebay
-coffee-script
-  >= 1.1.1
-    ewnd9/node-notes
-  git://github.com/xixixao/coffee-script.git#35ca45d13a784af508095214547b8bd57b33a40c
-    ewnd9/thepiratebay
-colors
-  *
-    ewnd9/node-notes
-  ^1.0.3
-    ewnd9/simple-shell
 combokeys
   ^2.4.3
     ewnd9/xavier
 concat-stream
   ^1.5.0
-    ewnd9/brightness-cli
     ewnd9/dictionary-cli
   ^1.5.1
     ewnd9/inquirer-test
-connect-livereload
-  ^0.5.3
-    ewnd9/ng2-contacts-demo
 copy-paste
   ^1.1.4
     ewnd9/pw3
@@ -254,15 +206,8 @@ css-loader
   ^0.23.0
     ewnd9/media-center
     ewnd9/the-feed
-debug
-  ^2.1.0
-    ewnd9/player
-del
-  ^1.1.1
-    ewnd9/ng2-contacts-demo
 detect-node
   ^2.0.3
-    ewnd9/OpenSRTJS
     ewnd9/universal-api
 dot-file-config
   ^0.5.0
@@ -286,12 +231,6 @@ electron-prebuilt
 electron-rebuild
   ^1.0.2
     ewnd9/xavier
-es6-module-loader
-  ^0.15.0
-    ewnd9/ng2-contacts-demo
-es6-promise
-  2.0.1
-    ewnd9/thepiratebay
 eslint
   ^1.10.3
     ewnd9/media-center
@@ -299,9 +238,6 @@ eslint
 eslint-plugin-react
   ^3.14.0
     ewnd9/media-center
-exec-sync
-  0.1.6
-    ewnd9/git-stats
 exit-hook
   ^1.1.1
     ewnd9/badtaste
@@ -313,8 +249,6 @@ express
   ^4.13.3
     ewnd9/media-center
     ewnd9/the-feed
-  ~4.13.1
-    ewnd9/ng2-contacts-demo
   ^4.12.4
     ewnd9/xavier
 express-cors
@@ -323,9 +257,6 @@ express-cors
 extract-text-webpack-plugin
   ^1.0.1
     ewnd9/media-center
-figlet
-  ^1.1.0
-    ewnd9/simple-shell
 file-loader
   ^0.8.5
     ewnd9/media-center
@@ -333,18 +264,9 @@ file-loader
 fkill
   ^3.1.0
     ewnd9/media-center
-follow-redirects
-  0.0.7
-    ewnd9/player
 fs-mock
   ^1.2.1
     ewnd9/dropbox-symlink
-gister
-  0.0.5
-    ewnd9/git-stats
-git-validate
-  ^2.0.0
-    ewnd9/postcommit-hook
 github-search-api
   0.0.3
     ewnd9/watchtower-cli
@@ -367,93 +289,12 @@ got
     ewnd9/the-feed
   ^6.0.0
     ewnd9/trakt-utils
-grunt-cli
-  ^0.1.13
-    ewnd9/simple-shell
-grunt-contrib-jshint
-  ^0.10.0
-    ewnd9/simple-shell
-grunt-contrib-nodeunit
-  ^0.4.1
-    ewnd9/simple-shell
-grunt-contrib-watch
-  ^0.6.1
-    ewnd9/simple-shell
-grunt-mocha-cli
-  ^1.11.0
-    ewnd9/simple-shell
-gulp
-  ^3.8.10
-    ewnd9/jr-crop
-  ^3.8.11
-    ewnd9/ng2-contacts-demo
-gulp-bump
-  ^0.3.1
-    ewnd9/ng2-contacts-demo
-gulp-concat
-  ^2.4.2
-    ewnd9/jr-crop
-  ^2.5.2
-    ewnd9/ng2-contacts-demo
-gulp-filter
-  ^2.0.2
-    ewnd9/ng2-contacts-demo
-gulp-header
-  ^1.2.2
-    ewnd9/jr-crop
-gulp-inject
-  ^1.3.1
-    ewnd9/ng2-contacts-demo
-gulp-inline-ng2-template
-  ^0.0.7
-    ewnd9/ng2-contacts-demo
-gulp-jshint
-  ^1.9.0
-    ewnd9/jr-crop
-gulp-minify-css
-  ^1.1.6
-    ewnd9/ng2-contacts-demo
-gulp-minify-html
-  ^1.0.3
-    ewnd9/ng2-contacts-demo
-gulp-plumber
-  ~1.0.1
-    ewnd9/ng2-contacts-demo
-gulp-rename
-  ^1.2.0
-    ewnd9/jr-crop
-gulp-sass
-  ^1.2.4
-    ewnd9/jr-crop
-gulp-shell
-  ~0.4.3
-    ewnd9/ng2-contacts-demo
-gulp-sourcemaps
-  ~1.5.2
-    ewnd9/ng2-contacts-demo
-gulp-template
-  ^3.0.0
-    ewnd9/ng2-contacts-demo
-gulp-typescript
-  ~2.8.2
-    ewnd9/ng2-contacts-demo
-gulp-uglify
-  ^1.0.2
-    ewnd9/jr-crop
-  ^1.2.0
-    ewnd9/ng2-contacts-demo
-gulp-watch
-  ^4.2.4
-    ewnd9/ng2-contacts-demo
 hasha
   ^2.2.0
     ewnd9/cached-npm-install
 history
   ^1.17.0
     ewnd9/the-feed
-home
-  ^0.1.3
-    ewnd9/player
 id3js
   ^1.1.3
     ewnd9/badtaste
@@ -464,8 +305,6 @@ inquirer
   ^0.11.4
     ewnd9/inquirer-bluebird
     ewnd9/inquirer-test
-  ^0.8.0
-    ewnd9/simple-shell
 inquirer-bluebird
   ^1.0.1
     ewnd9/inquirer-credentials
@@ -513,13 +352,8 @@ istanbul
   ^0.3.17
     ewnd9/pw3
 jade
-  1.8.2
-    ewnd9/git-stats
   ^1.10.0
     ewnd9/xavier
-jasmine-core
-  ~2.3.4
-    ewnd9/ng2-contacts-demo
 jquery
   ^2.1.4
     ewnd9/xavier
@@ -527,20 +361,10 @@ jquery
 js-yaml
   ^3.4.6
     ewnd9/the-feed
-jshint
-  *
-    ewnd9/postcommit-hook
-jshint-stylish
-  ^1.0.0
-    ewnd9/simple-shell
 karma
-  ~0.12.37
-    ewnd9/ng2-contacts-demo
   ^0.13.19
     ewnd9/universal-api-test
 karma-chrome-launcher
-  ~0.2.0
-    ewnd9/ng2-contacts-demo
   ^0.2.2
     ewnd9/universal-api-test
 karma-env-preprocessor
@@ -549,9 +373,6 @@ karma-env-preprocessor
 karma-firefox-launcher
   ^0.1.7
     ewnd9/universal-api-test
-karma-jasmine
-  ~0.3.6
-    ewnd9/ng2-contacts-demo
 karma-mocha
   ^0.2.1
     ewnd9/universal-api-test
@@ -575,12 +396,6 @@ keypress
   ^0.2.1
     ewnd9/media-center
     ewnd9/progress-control
-lame
-  ^1.2.2
-    ewnd9/player
-load-grunt-tasks
-  ^1.0.0
-    ewnd9/simple-shell
 lodash
   ^3.10.1
     ewnd9/badtaste
@@ -589,30 +404,20 @@ lodash
     ewnd9/trakt-utils
     ewnd9/watchtower-cli
   ^3.10.0
-    ewnd9/OpenSRTJS
     ewnd9/telegram-bot-cli
-  ^3.6.0
-    ewnd9/simple-shell
   ^3.9.3
     ewnd9/xavier
     ewnd9/xavier-browsers
-marked
-  0.3.5
-    ewnd9/nodejs.ru
-materialize-css
-  ^0.97.1
-    ewnd9/ng2-contacts-demo
 meow
   ^3.4.1
     ewnd9/badtaste
     ewnd9/media-center
-  ^3.3.0
-    ewnd9/brightness-cli
-    ewnd9/pw3
-    ewnd9/workout-cli
   ^3.7.0
     ewnd9/dictionary-cli
     ewnd9/the-feed
+  ^3.3.0
+    ewnd9/pw3
+    ewnd9/workout-cli
 minimist
   ^1.1.1
     ewnd9/telegram-bot-cli
@@ -639,14 +444,10 @@ mocha
     ewnd9/generator-ewnd9-npm
   ^2.3.0
     ewnd9/inquirer-menu
-  ^1.21.4
-    ewnd9/thepiratebay
 mock-fs
   ^3.6.0
     ewnd9/media-center
 moment
-  2.8.1
-    ewnd9/git-stats
   ^2.11.0
     ewnd9/media-center
   ^2.10.6
@@ -661,9 +462,6 @@ morgan
     ewnd9/the-feed
   ^1.5.3
     ewnd9/xavier
-musicmetadata
-  1.0.1
-    ewnd9/player
 newrelic
   ^1.22.2
     ewnd9/rutor-notify
@@ -688,9 +486,6 @@ node-notifier
     ewnd9/media-center
   ^4.2.3
     ewnd9/workout-cli
-node-static
-  ~0.7.6
-    ewnd9/jr-crop
 nodemon
   ^1.8.1
     ewnd9/media-center
@@ -722,9 +517,6 @@ omxplayer
 opbeat
   ^3.1.4
     ewnd9/the-feed
-open
-  0.0.5
-    ewnd9/ng2-contacts-demo
 opn
   ^3.0.2
     ewnd9/watchtower-cli
@@ -743,9 +535,6 @@ playmusic
 pm2
   ^0.14.5
     ewnd9/workout-cli
-pool_stream
-  0.0.2
-    ewnd9/player
 postcss-loader
   ^0.8.0
     ewnd9/media-center
@@ -774,9 +563,6 @@ pretty-bytes
 progress
   ^1.1.8
     ewnd9/progress-control
-progress-control
-  ^1.0.0
-    ewnd9/brightness-cli
 proxyquire
   ^1.6.0
     ewnd9/dropbox-symlink
@@ -832,36 +618,15 @@ redux-simple-router
 redux-thunk
   ^1.0.3
     ewnd9/the-feed
-reflect-metadata
-  0.1.0
-    ewnd9/ng2-contacts-demo
 request
-  
-    ewnd9/couchdb-dbperuser-provisioning
-  ^2.34.0
-    ewnd9/node-eztv
-  ^2.53.0
-    ewnd9/thepiratebay
   ^2.57.0
     ewnd9/xavier
 rollbar
   ^0.5.8
     ewnd9/rutor-notify
-run-sequence
-  ^1.1.0
-    ewnd9/ng2-contacts-demo
 script-loader
   ^0.6.1
     ewnd9/media-center
-semver
-  ^4.3.6
-    ewnd9/ng2-contacts-demo
-serve-static
-  ^1.9.2
-    ewnd9/ng2-contacts-demo
-should
-  ^4.0.4
-    ewnd9/thepiratebay
 show-episode-format
   ^1.0.2
     ewnd9/pw3
@@ -887,21 +652,12 @@ source-map-support
 spawn-args
   ^0.1.0
     ewnd9/watchtower-cli
-speaker
-  ^0.2.6
-    ewnd9/player
 split-torrent-release
   ^1.1.0
     ewnd9/media-center
 split-tracklist
   ^1.1.1
     ewnd9/badtaste
-stream-series
-  ^0.1.1
-    ewnd9/ng2-contacts-demo
-string
-  ^1.8.0
-    ewnd9/node-eztv
 style-loader
   ^0.13.0
     ewnd9/media-center
@@ -912,52 +668,23 @@ superagent
 superagent-jsonp
   0.0.5
     ewnd9/universal-api
-swig
-  ^1.4.2
-    ewnd9/git-stats
-  1.4.2
-    ewnd9/nodejs.ru
 symlink-or-copy
   ^1.0.1
     ewnd9/dropbox-symlink
-systemjs
-  ^0.18.17
-    ewnd9/ng2-contacts-demo
-systemjs-builder
-  ^0.13.6
-    ewnd9/ng2-contacts-demo
 table
   ^3.7.4
     ewnd9/the-feed
 telegram-bot-api
   ^0.3.0
     ewnd9/telegram-bot-cli
-time-grunt
-  ^1.0.0
-    ewnd9/simple-shell
-tiny-lr
-  ^0.1.6
-    ewnd9/ng2-contacts-demo
 trakt-utils
   ^0.3.0
     ewnd9/media-center
     ewnd9/trakt-cli
-tsd
-  ^0.6.4
-    ewnd9/ng2-contacts-demo
 twitter
   ^1.2.5
     ewnd9/rutor-notify
     ewnd9/the-feed
-typescript
-  ~1.6.0
-    ewnd9/ng2-contacts-demo
-underscore
-  ~1.6.0
-    ewnd9/player
-underscore-plus
-  1.x
-    ewnd9/expand-selection
 universal-api
   ^0.2.0
     ewnd9/vk-universal-api
@@ -982,9 +709,6 @@ user-home
     ewnd9/inquirer-credentials
     ewnd9/media-center
     ewnd9/the-feed
-uuid
-  
-    ewnd9/couchdb-dbperuser-provisioning
 vk-universal-api
   0.0.2
     ewnd9/badtaste
@@ -1007,20 +731,11 @@ x-ray
 x11
   ^2.0.2
     ewnd9/media-center
-xmlrpc
-  latest
-    ewnd9/OpenSRTJS
-yargs
-  ^3.25.0
-    ewnd9/ng2-contacts-demo
 yeoman-generator
   ^0.19.0
-    ewnd9/generator-ewnd9-eslint
     ewnd9/generator-ewnd9-npm
+    ewnd9/generator-ewnd9-eslint
 yosay
   ^1.0.2
-    ewnd9/generator-ewnd9-eslint
     ewnd9/generator-ewnd9-npm
-zone.js
-  ^0.4.1
-    ewnd9/ng2-contacts-demo
+    ewnd9/generator-ewnd9-eslint

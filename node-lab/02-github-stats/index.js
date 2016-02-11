@@ -43,6 +43,10 @@ const promises = [];
 const loadPage = page => ghGot(`users/ewnd9/repos?page=${page}`)
   .then(res => {
     res.body.forEach((r, i) => {
+      if (r.fork) {
+        return;
+      }
+
       const url = `https://raw.githubusercontent.com/${r.full_name}/master/package.json`;
 
       promises.push(
