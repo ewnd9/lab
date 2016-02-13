@@ -25,6 +25,7 @@
   "dependencies": {
     "gh-got": "^2.4.0",
     "got": "^6.1.1",
+    "ohcrash": "^1.0.3",
     "ytdl-core": "^0.7.10"
   },
   "devDependencies": {
