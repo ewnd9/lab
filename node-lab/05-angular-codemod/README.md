@@ -1,0 +1,3 @@
+- [x] two and more arguments
+- [ ] single argument without brackets
+- [ ] refactor to babel-plugin 
