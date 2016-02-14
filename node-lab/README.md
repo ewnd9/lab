@@ -3,13 +3,20 @@
 ## Install
 
 ```
-$ npm install
+$ npm install # common dependencies
+$ cd 00-test && npm install # per-experiment dependencies
 ```
 
 ## Usage
 
 ```
-$ node_modules/.bin/babel-node <folder>
+$ node_modules/.bin/babel-node 01-youtube-fetch/index.js
+```
+
+### Create new experiment
+
+```
+$ node create 00-name
 ```
 
 ## License
