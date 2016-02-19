@@ -37,11 +37,11 @@ class Todo extends React.Component {
   }
   render() {
     return <tr>
-      <td style={{border: "1px solid black"}}>
+      <td style={style.tableContent}>
         <input type="checkbox" checked={this.state.checked} onChange={this.handleChange}/>
       </td>
-      <td style={{border: "1px solid black"}}>{this.props.title}</td>
-      <td style={{border: "1px solid black"}}>{this.props.children}</td>
+      <td style={style.tableContent}>{this.props.title}</td>
+      <td style={style.tableContent}>{this.props.children}</td>
     </tr>
   }
 }
@@ -49,6 +49,13 @@ class Todo extends React.Component {
 Todo.propTypes = {
   title: React.PropTypes.string.isRequired
 };
+
+const style = {
+  tableContent: {
+    border: "1px solid black"
+  }
+};
+
 
 class TodoForm extends React.Component {
   render() {
