@@ -28,15 +28,15 @@ class TodoList extends React.Component {
 class Todo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {checked: false};
+    this.state = { checked: false };
   }
   handleChange(e) {
-    this.setState({checked: e.target.checked});
+    this.setState({ checked: e.target.checked });
   }
   render() {
-    return <tr>
+    return <tr style={this.state.checked ? style.checkedTodo : style.notCheckedTodo }>
       <td style={style.tableContent}>
-        <input type="checkbox" checked={this.state.checked} onChange={this.handleChange}/>
+        <input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)}/>
       </td>
       <td style={style.tableContent}>{this.props.title}</td>
       <td style={style.tableContent}>{this.props.children}</td>
@@ -51,6 +51,12 @@ Todo.propTypes = {
 const style = {
   tableContent: {
     border: "1px solid black"
+  },
+  checkedTodo: {
+    textDecoration: "line-through"
+  },
+  notCheckedTodo: {
+    textDecoration: "none"
   }
 };
 
