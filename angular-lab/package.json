@@ -1,0 +1,19 @@
+{
+  "name": "angular-lab",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wserve",
+    "build": "rm -rf dist && NODE_ENV=production wbuild"
+  },
+  "private": true,
+  "author": "ewnd9 <ewndnine@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0"
+  },
+  "devDependencies": {
+    "webpackman": "file:///home/ewnd9/github/webpackman"
+  }
+}
