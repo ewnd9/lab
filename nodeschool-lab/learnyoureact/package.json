@@ -1,0 +1,6 @@
+{
+  "name": "lab",
+  "dependencies": {
+    "learnyoureact": "^0.11.2"
+  }
+}
