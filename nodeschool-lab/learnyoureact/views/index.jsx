@@ -40,9 +40,14 @@ class TodoList extends React.Component {
       detailValue: ''
     });
   }
+  onDelete(index) {
+    this.setState({ data: this.state.data.slice(0, index).concat(this.state.data.slice(index + 1)) });
+  }
   render() {
-    const todo = this.state.data.map(function(obj) {
-      return <Todo title={obj.title} key={obj.title}>{obj.detail}</Todo>;
+    const todo = this.state.data.map((obj, index) => {
+      return <Todo title={obj.title} key={obj.title} onDelete={this.onDelete.bind(this, index)}>
+        {obj.detail}
+      </Todo>
     });
 
     return (
@@ -62,23 +67,36 @@ class TodoList extends React.Component {
   }
 }
 
-
 class Todo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { checked: false };
+
+    this.state = {
+      checked: false,
+      TodoStyle: style.notCheckedTodo
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this._onDelete = this._onDelete.bind(this);
   }
   handleChange(e) {
-    this.setState({ checked: e.target.checked });
+    this.setState({
+      checked: !this.state.checked,
+      TodoStyle: this.state.checked ? style.checkedTodo : style.notCheckedTodo
+    });
+  }
+  _onDelete() {
+    this.props.onDelete(this.props.title);
   }
   render() {
-    return <tr style={this.state.checked ? style.checkedTodo : style.notCheckedTodo }>
-      <td style={style.tableContent}>
-        <input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)}/>
-      </td>
-      <td style={style.tableContent}>{this.props.title}</td>
-      <td style={style.tableContent}>{this.props.children}</td>
-    </tr>
+    return (
+      <tr style={this.state.TodoStyle}>
+        <td style={style.tableContent}><button onClick={this._onDelete}>X</button></td>
+        <td style={style.tableContent}><input type="checkbox" checked={this.state.checked} onChange={this.handleChange} /></td>
+        <td style={style.tableContent}>{this.props.title}</td>
+        <td style={style.tableContent}>{this.props.children}</td>
+      </tr>
+    );
   }
 }
 
