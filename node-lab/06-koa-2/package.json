@@ -10,8 +10,8 @@
     "test": "ava",
     "test:watch": "nodemon --exec ava",
     "prebuild": "rm -rf dist && mkdir dist",
-    "build": "babel -d dist/ src/",
-    "build:watch": "babel -w -d dist/ src/",
+    "build": "babel -d -s dist/ src/",
+    "build:watch": "babel -w -s -d dist/ src/",
     "prepublish": "npm run build"
   },
   "preferGlobal": "false",
@@ -26,9 +26,15 @@
   "license": "MIT",
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.5.2",
+    "dotenv": "^2.0.0",
     "koa": "^2.0.0-alpha.3",
+    "koa-bodyparser": "^3.0.0",
     "koa-convert": "^1.2.0",
-    "koa-router": "^7.0.1"
+    "koa-generic-session": "^1.10.1",
+    "koa-passport": "^2.0.1",
+    "koa-router": "^7.0.1",
+    "passport-vkontakte": "^0.4.0",
+    "source-map-support": "^0.4.0"
   },
   "devDependencies": {
     "ava": "^0.8.0",
