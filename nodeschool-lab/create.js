@@ -19,5 +19,6 @@ fs.writeFileSync(`${pkg}/completed.json`, '[]');
 
 fs.mkdirSync(`/home/ewnd9/.config/${pkg}`);
 fs.writeFileSync(`${pkg}/completed.json`, '[]');
+fs.writeFileSync(`${pkg}/.gitignore`, 'node_modules');
 
 require('./link-progress');
