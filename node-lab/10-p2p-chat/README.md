@@ -38,6 +38,16 @@ $ node peer-distributed u1 u2
 $ node peer-distributed u2 u1
 ```
 
+## Web
+
+fork of https://gist.github.com/substack/0177839f57e8fe0fc294
+
+webpack fails due to `signalhub`'s dependency to `fs`
+
+```
+$ wzrd src/index.js:bundle.js
+```
+
 ## Resources
 
 - https://opbeat.com/blog/posts/how-to-write-a-p2p-chat-application-by-mathias-buus/
