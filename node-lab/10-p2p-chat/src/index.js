@@ -12,7 +12,12 @@ var vdom = require('virtual-dom')
 var h = vdom.h
 var main = require('main-loop')
 var loop = main({ lines: [] }, render, vdom)
-document.querySelector('#content').appendChild(loop.target)
+
+var content = document.createElement('div');
+content.id = 'content';
+
+document.body.appendChild(content);
+content.appendChild(loop.target)
 
 var split = require('split2')
 var through = require('through2')
