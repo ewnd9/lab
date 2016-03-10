@@ -8,8 +8,12 @@
 </head>
 <body>
   <div ng-app="app">
-    {{ 1 + 1 }}
-    <main></main>
+    <div>
+      <a ui-sref="main">Main</a>
+      <a ui-sref="about">About</a>
+    </div>
+
+    <div ui-view></div>
   </div>
 
   <script src="/bundle.js"></script>

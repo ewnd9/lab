@@ -3,15 +3,21 @@ const config = {
   module: {
     preLoaders: [
       {
-        test: file => {
-          const match = /\/src\/components\/(.*)\/(\1)\.js$/.test(file);
-          console.log(file, match);
-          return match;
-        },
+        test: /\/src\/components\/(.*)\/(\1)\.js$/,
         exclude: /node_modules/,
         loader: 'babel',
         query: {
+          presets: [],
           plugins: ['babel-plugin-annotate-export-default']
+        }
+      },
+      {
+        test: /\/src\/config\/.+\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: [],
+          plugins: ['babel-plugin-annotate-export-functions']
         }
       }
     ],
@@ -19,7 +25,10 @@ const config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        }
       },
     ]
   },
