@@ -1,0 +1,4 @@
+{
+  "name": "babel-plugin-annotate-export-default",
+  "main": "./babel-plugin-annotate-export-default.es5.js"
+}
