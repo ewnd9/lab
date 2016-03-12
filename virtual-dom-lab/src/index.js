@@ -1,34 +1,27 @@
 import vDom, { h } from 'virtual-dom';
 import xtend from 'xtend';
 
-import main from 'main-loop';
 import router from './routes';
 
 import singlePage from 'single-page';
 import catchLinks from 'catch-links';
+import { init, bus, UPDATE_PATH } from './state';
 
-const state = {
-  path: location.pathname
-};
-
-const loop = main(state, render, vDom);
+const loop = init(render, vDom);
 
 const target = document.querySelector('#content');
 target.parentNode.replaceChild(loop.target, target);
 
-const show = singlePage(function (href) {
-  loop.update(xtend({ path: href }));
-});
-
+const show = singlePage(href => bus.emit(UPDATE_PATH, href));
 catchLinks(window, show);
 
-function render (state) {
+function render(state) {
   const m = router.match(state.path);
 
   if (!m) {
     return h('div.error', 'not found');
   } else {
-    return m.fn(xtend(m, { state: state }));
+    return m.fn(xtend(m, { state }));
   }
 };
 

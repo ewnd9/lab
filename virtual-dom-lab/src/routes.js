@@ -40,6 +40,11 @@ function layout(state, page) {
       }) }
       ${ page }
     </div>
+    <div class="log">
+      ${ (state.logs || []).map(log => {
+        return hx`<div>${log}</div>`;
+      }) }
+    </div>
   </div>
   `;
 };
