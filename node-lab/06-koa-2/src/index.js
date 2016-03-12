@@ -1,4 +1,4 @@
-import sourceMaps from 'source-map-support/register';
+import 'source-map-support/register';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -6,49 +6,28 @@ import koa from 'koa';
 import convert from 'koa-convert';
 import Router from 'koa-router';
 import bodyParser from 'koa-bodyparser';
-import session from 'koa-generic-session';
-import passport from 'koa-passport';
-import VKontakteStrategy from 'passport-vkontakte';
+import session from 'koa-session';
 
 const app = new koa();
 
 app.use(bodyParser());
+app.keys = [process.env.SESSION_SECRET];
+app.use(convert(session(app)));
 
-app.keys = ['secret']
-app.use(convert(session()));
+// depends on `dotenv.config()`
+const { User } = require('./db/db');
+const passport = require('./helpers/passport').default;
 
 app.use(passport.initialize());
 app.use(passport.session());
 
-function mockUser() {
-  return { id: 1, name: 'ewnd9' };
-};
-
-passport.serializeUser(function (user, done) {
-  done(null, user.id);
-});
-
-passport.deserializeUser(function (id, done) {
-  done(null, mockUser());
-});
-
-const vkApp = {
-  clientID: process.env.VK_APP_ID, // VK.com docs call it 'API ID'
-  clientSecret: process.env.VK_APP_SECRET,
-  callbackURL:  'http://localhost:3000/auth/vk/callback'
-};
-
-const vkCallback = function(accessToken, refreshToken, profile, done) {
-  console.log(accessToken);
-  return done(null, mockUser());
-};
-
-passport.use(new VKontakteStrategy.Strategy(vkApp, vkCallback));
-
 const router = new Router();
 
 router.get('/', async ctx => {
-  ctx.body = { status: 'hello' };
+  ctx.body = {
+    status: 'hello',
+    user: ctx.req.user && ctx.req.user.username || 'Guest'
+  };
 });
 
 router.get('/auth/vk', passport.authenticate('vkontakte', { scope: ['friends', 'offline', 'audio'] }));
@@ -56,8 +35,15 @@ router.get('/auth/vk/callback', passport.authenticate('vkontakte'), ctx => {
   ctx.redirect('/');
 });
 
+router.get('/auth/logout', async ctx => {
+  ctx.session = null;
+  ctx.body = {
+    status: 'good-bye'
+  };
+});
+
 router.get('/users/1', async ctx => {
-  const user = await Promise.resolve(mockUser());
+  const user = await Promise.resolve(User.findOne());
   ctx.body = user;
 });
 
@@ -73,8 +59,13 @@ app.use(async (ctx, next) => {
   try {
     await next();
   } catch (err) {
-    ctx.body = { message: err.message };
     ctx.status = err.status || 500;
+
+    ctx.body = {
+      status: 'error',
+      code: ctx.status,
+      message: err.message
+    };
   }
 });
 

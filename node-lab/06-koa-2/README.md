@@ -4,6 +4,7 @@
 
 ```
 $ npm install
+$ cp env-example .env
 ```
 
 ## Usage
@@ -11,6 +12,17 @@ $ npm install
 ```
 $ npm run start:dev
 ```
+
+## Routes
+
+```
+GET /auth/vk
+GET /auth/logout
+```
+
+## Notes
+
+Mongo address in `.env` is `mongodb://localhost/node-lab-koa`
 
 ## License
 
