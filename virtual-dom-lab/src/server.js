@@ -8,6 +8,11 @@ const st = ecstatic(path.join(__dirname, '..', 'public'));
 
 import createElement from 'virtual-dom/create-element';
 
+import wsock from 'websocket-stream';
+import split from 'split2';
+import through from 'through2';
+import onend from 'end-of-stream';
+
 import http from 'http';
 import router from './routes';
 
@@ -26,6 +31,19 @@ const server = http.createServer(function(req, res) {
     st(req, res);
   }
 });
+
+wsock.createServer({ server: server }, function(stream) {
+  stream.pipe(process.stdout);
+
+  let i = 0;
+  const iv = setInterval(function () {
+    stream.write('HELLO ' + (i++) + '\n')
+  }, 1000);
+
+  onend(stream, function() { 
+    clearInterval(iv);
+  });
+})
 
 server.listen(8000);
 console.log('localhost:8000');
