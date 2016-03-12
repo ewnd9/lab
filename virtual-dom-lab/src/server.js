@@ -13,6 +13,9 @@ import split from 'split2';
 import through from 'through2';
 import onend from 'end-of-stream';
 
+import streamSet from 'stream-set';
+const activeSockets = streamSet();
+
 import http from 'http';
 import router from './routes';
 
@@ -33,17 +36,15 @@ const server = http.createServer(function(req, res) {
 });
 
 wsock.createServer({ server: server }, function(stream) {
-  stream.pipe(process.stdout);
+  console.log('sending');
+  activeSockets.add(stream);
 
-  let i = 0;
-  const iv = setInterval(function () {
-    stream.write('HELLO ' + (i++) + '\n')
-  }, 1000);
+  sendCount(stream);
+});
 
-  onend(stream, function() { 
-    clearInterval(iv);
-  });
-})
+function sendCount(stream) {
+  stream.write(JSON.stringify({ count: activeSockets.size }) + '\n');
+};
 
 server.listen(8000);
 console.log('localhost:8000');

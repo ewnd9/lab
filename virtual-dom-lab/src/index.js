@@ -31,3 +31,5 @@ function render (state) {
     return m.fn(xtend(m, { state: state }));
   }
 };
+
+require('./websocket-client');
