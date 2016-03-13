@@ -1,0 +1,7 @@
+{
+  "name": "lab-regex-adventure",
+  "dependencies": {
+    "marked": "^0.3.5",
+    "regex-adventure": "*"
+  }
+}
