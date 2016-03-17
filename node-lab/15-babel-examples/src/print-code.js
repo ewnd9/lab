@@ -2,7 +2,7 @@
 
 module.exports = (src, transform) => {
   const result = require('babel-core').transform(src, {
-    plugins: [transform]
+    plugins: Array.isArray(transform) ? transform : [transform]
   });
 
   console.log(result.code);

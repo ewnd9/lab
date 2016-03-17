@@ -1,8 +1,6 @@
 # babel-examples
 
-Demos aka why not they are missing in modules' readme (maybe they are somewhere else e.g. test folder?)
-
-Practically exploring AST business
+Becoming more aware of transpilation step by making practical examples
 
 ## Notes
 
