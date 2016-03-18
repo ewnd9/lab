@@ -11,17 +11,6 @@ autoprefixer
   ^6.3.3
     webpackman
 ava
-  ^0.13.0
-    cached-npm-repo
-    inquirer-bluebird
-    inquirer-menu
-    inquirer-question
-    inquirer-test
-  ^0.9.1
-    dictionary-cli
-    media-center
-  ^0.11.0
-    inquirer-credentials
   ^0.8.0
     record-desktop
     split-torrent-release
@@ -30,11 +19,20 @@ ava
     show-episode-format
     tracklister-app
     trakt-cli
+  ^0.9.1
+    dictionary-cli
+    media-center
+  ^0.11.0
+    inquirer-credentials
   ^0.12.0
     the-feed
+  ^0.13.0
+    cached-npm-repo
+    inquirer-bluebird
+    inquirer-menu
+    inquirer-question
+    inquirer-test
 babel
-  ^5.8.23
-    badtaste
   ^5.8.5
     pw3
   ^5.8.21
@@ -45,6 +43,8 @@ babel
     universal-api
     universal-api-test
     vk-universal-api
+  ^5.8.23
+    badtaste
 babel-cli
   ^6.4.0
     dictionary-cli
@@ -57,6 +57,8 @@ babel-cli
     lab
     tracklister-app
 babel-core
+  ^5.4.7
+    xavier-browsers
   ^6.4.0
     dictionary-cli
     media-center
@@ -64,13 +66,11 @@ babel-core
     show-episode-format
     the-feed
     trakt-cli
+  ^6.5.1
+    tracklister-app
   ^6.5.2
     lab
     webpackman
-  ^6.5.1
-    tracklister-app
-  ^5.4.7
-    xavier-browsers
 babel-eslint
   ^5.0.0-beta9
     cached-npm-repo
@@ -80,14 +80,14 @@ babel-eslint
   ^5.0.0
     record-desktop
 babel-loader
-  ^6.2.1
-    record-desktop
-  ^5.4.0
-    universal-api-test
-  ^6.2.2
-    webpackman
   ^5.1.3
     xavier-browsers
+  ^5.4.0
+    universal-api-test
+  ^6.2.1
+    record-desktop
+  ^6.2.2
+    webpackman
 babel-plugin-lodash
   ^1.1.0
     dictionary-cli
@@ -96,12 +96,12 @@ babel-plugin-transform-runtime
   ^6.4.0
     media-center
 babel-polyfill
+  ^6.0.16
+    pw3
   ^6.3.14
     dictionary-cli
   ^6.5.0
     media-center
-  ^6.0.16
-    pw3
 babel-preset-es2015
   ^6.3.13
     dictionary-cli
@@ -126,13 +126,13 @@ babel-preset-react-hmre
     the-feed
     tracklister-app
 babel-preset-stage-0
-  ^6.5.0
-    lab
-    tracklister-app
   ^6.3.13
     media-center
     record-desktop
     the-feed
+  ^6.5.0
+    lab
+    tracklister-app
 babel-register
   ^6.4.3
     dictionary-cli
@@ -140,30 +140,30 @@ blessed
   ^0.1.80
     badtaste
 bluebird
-  ^2.10.0
-    badtaste
-    universal-api
-    workout-cli
+  ^2.9.27
+    xavier
+    xavier-browsers
   ^2.9.32
     brightness-interactive-cli
     telegram-bot-cli
   ^2.9.34
     dictionary-cli
     watchtower-cli
-  ^3.1.5
-    inquirer-bluebird
-  ^3.0.0
-    inquirer-credentials
+  ^2.10.0
+    badtaste
+    universal-api
+    workout-cli
   ^2.10.2
     media-center
     rutor-notify
+  ^3.0.0
+    inquirer-credentials
   ^3.0.6
     the-feed
   ^3.1.1
     trakt-utils
-  ^2.9.27
-    xavier
-    xavier-browsers
+  ^3.1.5
+    inquirer-bluebird
 body-parser
   ^1.14.2
     media-center
@@ -178,8 +178,6 @@ browserify
   ^13.0.0
     universal-api-test
 chai
-  ^3.3.0
-    badtaste
   ^3.0.0
     dot-file-config
     telegram-bot-cli
@@ -192,16 +190,18 @@ chai
     split-tracklist
     universal-api
     universal-api-test
+  ^3.3.0
+    badtaste
 chalk
+  ^1.0.0
+    generator-ewnd9-npm
+  ^1.1.0
+    watchtower-cli
   ^1.1.1
     dictionary-cli
     rutor-notify
     the-feed
     trakt-cli
-  ^1.0.0
-    generator-ewnd9-npm
-  ^1.1.0
-    watchtower-cli
 cheerio
   ^0.19.0
     rutor-notify
@@ -210,10 +210,10 @@ chokidar
   ^1.4.2
     media-center
 classnames
-  ^2.2.3
-    media-center
   ^2.2.1
     the-feed
+  ^2.2.3
+    media-center
 cli-cursor
   ^1.0.1
     progress-control
@@ -224,16 +224,16 @@ combokeys
   ^2.4.3
     xavier
 concat-stream
+  ^1.5.0
+    dictionary-cli
   ^1.5.1
     cached-npm-repo
     inquirer-test
-  ^1.5.0
-    dictionary-cli
 configstore
-  ^2.0.0
-    cached-npm-repo
   ^1.4.0
     record-desktop
+  ^2.0.0
+    cached-npm-repo
 copy-paste
   ^1.1.4
     pw3
@@ -241,20 +241,24 @@ cors
   ^2.7.1
     media-center
 coveralls
+  ^2.11.3
+    pw3
   ^2.11.6
     dictionary-cli
     split-torrent-release
-  ^2.11.3
-    pw3
 css-loader
-  ^0.23.1
-    record-desktop
   ^0.15.4
     webpackman
+  ^0.23.1
+    record-desktop
 detect-node
   ^2.0.3
     universal-api
 dot-file-config
+  0.0.1
+    xavier
+  0.0.2
+    telegram-bot-cli
   ^0.5.0
     badtaste
     media-center
@@ -263,18 +267,14 @@ dot-file-config
     dictionary-cli
   ^0.6.1
     inquirer-credentials
-  0.0.2
-    telegram-bot-cli
-  0.0.1
-    xavier
 dotenv
   ^1.2.0
     rutor-notify
 electron-prebuilt
-  ^0.36.9
-    record-desktop
   ^0.35.2
     xavier
+  ^0.36.9
+    record-desktop
 electron-rebuild
   ^1.0.2
     xavier
@@ -299,11 +299,11 @@ expand-tilde
   1.2.0
     the-feed
 express
+  ^4.12.4
+    xavier
   ^4.13.3
     media-center
     the-feed
-  ^4.12.4
-    xavier
 express-cors
   0.0.3
     the-feed
@@ -334,18 +334,18 @@ globby
     media-center
     record-desktop
 got
-  ^5.3.1
-    dictionary-cli
-  ^6.0.1
-    media-center
-  ^6.1.1
-    pw3
   ^4.2.0
     rutor-notify
   ^5.1.0
     the-feed
+  ^5.3.1
+    dictionary-cli
   ^6.0.0
     trakt-utils
+  ^6.0.1
+    media-center
+  ^6.1.1
+    pw3
 hasha
   ^2.2.0
     cached-npm-install
@@ -375,6 +375,8 @@ inquirer
     inquirer-bluebird
     inquirer-test
 inquirer-bluebird
+  ^1.0.0
+    telegram-bot-cli
   ^1.0.1
     inquirer-credentials
     watchtower-cli
@@ -383,8 +385,6 @@ inquirer-bluebird
   ^1.0.6
     pw3
     trakt-cli
-  ^1.0.0
-    telegram-bot-cli
 inquirer-credentials
   ^1.2.0
     media-center
@@ -396,23 +396,23 @@ inquirer-menu
   0.2.0
     workout-cli
 inquirer-question
+  ^1.1.0
+    workout-cli
   ^1.1.1
     badtaste
     media-center
     the-feed
   ^1.2.0
     inquirer-menu
-  ^1.1.0
-    workout-cli
 inquirer-test
   ^1.0.0
     inquirer-bluebird
   ^1.0.2
     inquirer-credentials
-  ^1.0.5
-    inquirer-menu
   ^1.0.4
     inquirer-question
+  ^1.0.5
+    inquirer-menu
 intel
   ^1.0.2
     badtaste
@@ -472,6 +472,11 @@ keypress
     media-center
     progress-control
 lodash
+  ^3.9.3
+    xavier
+    xavier-browsers
+  ^3.10.0
+    telegram-bot-cli
   ^3.10.1
     badtaste
     dictionary-cli
@@ -481,12 +486,10 @@ lodash
     watchtower-cli
   ^4.5.0
     record-desktop
-  ^3.10.0
-    telegram-bot-cli
-  ^3.9.3
-    xavier
-    xavier-browsers
 meow
+  ^3.3.0
+    pw3
+    workout-cli
   ^3.4.1
     badtaste
     media-center
@@ -494,9 +497,6 @@ meow
     dictionary-cli
     the-feed
     trakt-cli
-  ^3.3.0
-    pw3
-    workout-cli
 minimist
   ^1.1.1
     telegram-bot-cli
@@ -509,8 +509,6 @@ mkdirp
     media-center
     record-desktop
 mocha
-  ^2.3.3
-    badtaste
   ^2.2.5
     dot-file-config
     dropbox-symlink
@@ -522,6 +520,8 @@ mocha
     telegram-bot-cli
     universal-api
     universal-api-test
+  ^2.3.3
+    badtaste
   ^2.4.5
     generator-ewnd9-eslint
   *
@@ -530,28 +530,28 @@ mock-fs
   ^3.6.0
     media-center
 moment
-  ^2.11.0
-    media-center
   ^2.10.6
     rutor-notify
     the-feed
     workout-cli
+  ^2.11.0
+    media-center
   ^2.11.1
     trakt-utils
 morgan
+  ^1.5.3
+    xavier
   ^1.6.1
     media-center
     the-feed
-  ^1.5.3
-    xavier
 newrelic
   ^1.22.2
     rutor-notify
 nock
-  ^3.6.0
-    media-center
   ^3.4.0
     the-feed
+  ^3.6.0
+    media-center
   ^5.2.1
     trakt-utils
 node-cache
@@ -564,13 +564,15 @@ node-libs-browser
   ^0.5.2
     xavier-browsers
 node-notifier
+  ^4.2.3
+    workout-cli
   ^4.4.0
     media-center
   ^4.5.0
     record-desktop
-  ^4.2.3
-    workout-cli
 nodemon
+  ^1.4.1
+    the-feed
   ^1.8.1
     media-center
     record-desktop
@@ -578,22 +580,20 @@ nodemon
     split-torrent-release
     trakt-cli
     trakt-utils
-  ^1.4.1
-    the-feed
 npm-run-all
+  ^1.3.4
+    the-feed
   ^1.4.0
     media-center
     record-desktop
-  ^1.3.4
-    the-feed
 npmconf
   ^2.1.2
     generator-ewnd9-npm
 nyc
-  ^5.3.0
-    dictionary-cli
   ^4.0.1
     split-torrent-release
+  ^5.3.0
+    dictionary-cli
   ^5.6.0
     the-feed
 object-assign
@@ -642,11 +642,11 @@ postcss-loader
   ^0.8.1
     webpackman
 pouchdb
+  ^5.0.0
+    rutor-notify
   ^5.1.0
     media-center
     the-feed
-  ^5.0.0
-    rutor-notify
 pouchdb-find
   ^0.8.0
     the-feed
@@ -667,23 +667,23 @@ progress
   ^1.1.8
     progress-control
 proxyquire
-  ^1.7.4
-    cached-npm-repo
   ^1.6.0
     dropbox-symlink
     telegram-bot-cli
   ^1.7.3
     media-center
+  ^1.7.4
+    cached-npm-repo
 raw-loader
   ^0.5.1
     webpackman
 react
+  ^0.14.3
+    the-feed
   ^0.14.4
     media-center
   ^0.14.6
     record-desktop
-  ^0.14.3
-    the-feed
   ^0.14.7
     tracklister-app
 react-cl-audio-player
@@ -693,12 +693,12 @@ react-component-gallery
   ^1.2.1
     record-desktop
 react-dom
+  ^0.14.3
+    the-feed
   ^0.14.4
     media-center
   ^0.14.6
     record-desktop
-  ^0.14.3
-    the-feed
   ^0.14.7
     tracklister-app
 react-hot-loader
@@ -752,23 +752,23 @@ script-loader
     media-center
     webpackman
 show-episode-format
-  ^1.0.2
-    pw3
   ^1.0.1
     trakt-cli
+  ^1.0.2
+    pw3
 sinon
   ^1.17.2
     media-center
 socket.io
-  ^1.4.2
-    media-center
   ^1.3.7
     xavier
-socket.io-client
   ^1.4.2
     media-center
+socket.io-client
   ^1.3.5
     xavier-browsers
+  ^1.4.2
+    media-center
 sorted-object
   ^2.0.0
     generator-ewnd9-eslint
@@ -788,10 +788,10 @@ split-tracklist
     badtaste
     tracklister-app
 style-loader
-  ^0.13.0
-    record-desktop
   ^0.12.3
     webpackman
+  ^0.13.0
+    record-desktop
 superagent
   ^1.4.0
     universal-api
@@ -828,10 +828,10 @@ update-notifier
     dictionary-cli
     trakt-cli
 url-loader
-  ^0.5.7
-    record-desktop
   ^0.5.6
     webpackman
+  ^0.5.7
+    record-desktop
 user-home
   ^2.0.0
     cached-npm-install
@@ -846,14 +846,14 @@ vk-universal-api
     badtaste
     the-feed
 webpack
+  ^1.9.10
+    xavier-browsers
   ^1.12.11
     record-desktop
   ^1.12.12
     universal-api-test
   ^1.12.13
     webpackman
-  ^1.9.10
-    xavier-browsers
 webpack-dev-server
   ^1.14.1
     record-desktop

@@ -1,3 +1,5 @@
+Just look at the [`nice report`](report.txt)
+
 ## Usage
 
 ```

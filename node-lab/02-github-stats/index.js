@@ -1,6 +1,8 @@
 'use strict';
 
 const fs = require('fs');
+const semverSort = require('semver-sort');
+
 const result = {};
 
 function processDeps(project, deps) {
@@ -24,8 +26,20 @@ function printResult() {
 
   Object.keys(result).sort().forEach(mod => {
     report.push(mod);
-    Object.keys(result[mod]).forEach(v => {
+
+    // https://github.com/ragingwind/semver-sort/issues/2
+
+    let sortedKeys = Object.keys(result[mod]);
+
+    try {
+      sortedKeys = semverSort.asc(sortedKeys);
+    } catch (e) {
+      console.log(`can't sort ${JSON.stringify(sortedKeys)} for "${mod}"`);
+    }
+
+    sortedKeys.forEach(v => {
       report.push('  ' + v);
+
       result[mod][v].forEach(project => {
         report.push('    ' + project);
       });
