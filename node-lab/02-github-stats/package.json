@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "dependencies": {
+    "gh-got": "^2.4.0",
+    "got": "^6.2.0",
+    "mkdirp": "^0.5.1",
+    "pify": "^2.3.0"
+  }
+}

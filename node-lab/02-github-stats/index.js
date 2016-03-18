@@ -1,7 +1,6 @@
-const ghGot = require('gh-got');
-const got = require('got');
-const fs = require('fs');
+'use strict';
 
+const fs = require('fs');
 const result = {};
 
 function processDeps(project, deps) {
@@ -37,43 +36,15 @@ function printResult() {
   fs.writeFileSync(__dirname + '/report.txt', report.join('\n'), 'utf-8');
 };
 
-const delay = timeout => new Promise(resolve => setTimeout(resolve, timeout));
-const promises = [];
+fs.readdirSync('./data').forEach(file => {
+  if (fs.lstatSync('./data/' + file).isDirectory()) {
+    const body = JSON.parse(fs.readFileSync('./data/' + file + '/package.json'));
+    const dependencies = body.dependencies;
+    const devDependencies = body.devDependencies;
 
-const loadPage = page => ghGot(`users/ewnd9/repos?page=${page}`)
-  .then(res => {
-    res.body.forEach((r, i) => {
-      if (r.fork) {
-        return;
-      }
+    processDeps(file, dependencies);
+    processDeps(file, devDependencies);
+  }
+});
 
-      const url = `https://raw.githubusercontent.com/${r.full_name}/master/package.json`;
-
-      promises.push(
-        delay(i * 100)
-        .then(() => got(url))
-        .then(res => {
-          const { dependencies, devDependencies } = JSON.parse(res.body);
-          processDeps(r.full_name, dependencies);
-          processDeps(r.full_name, devDependencies);
-        }, err => {
-          if (err.statusCode !== 404) {
-            throw err;
-          }
-        })
-      );
-    });
-
-    return Promise
-      .all(promises)
-      .then(() => {
-        if (res.body.length === 30) {
-          console.log(page + 1);
-          return loadPage(page + 1);
-        } else {
-          printResult();
-        }
-      })
-  });
-
-loadPage(1).catch(err => console.log(err, err.stack));
+printResult();

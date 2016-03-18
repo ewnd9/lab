@@ -1,741 +1,891 @@
 alertify.js
   ^1.0.8
-    ewnd9/media-center
+    media-center
 angular
   ^1.3.16
-    ewnd9/xavier
+    xavier
 angular-ui-router
   ^0.2.15
-    ewnd9/xavier
+    xavier
 autoprefixer
-  ^6.2.3
-    ewnd9/media-center
+  ^6.3.3
+    webpackman
 ava
+  ^0.13.0
+    cached-npm-repo
+    inquirer-bluebird
+    inquirer-menu
+    inquirer-question
+    inquirer-test
   ^0.9.1
-    ewnd9/dictionary-cli
-    ewnd9/media-center
-    ewnd9/the-feed
+    dictionary-cli
+    media-center
   ^0.11.0
-    ewnd9/inquirer-bluebird
-    ewnd9/inquirer-credentials
-    ewnd9/inquirer-test
-  ^0.9.0
-    ewnd9/show-episode-format
-    ewnd9/trakt-cli
+    inquirer-credentials
   ^0.8.0
-    ewnd9/split-torrent-release
-    ewnd9/trakt-utils
+    record-desktop
+    split-torrent-release
+    trakt-utils
+  ^0.9.0
+    show-episode-format
+    tracklister-app
+    trakt-cli
+  ^0.12.0
+    the-feed
 babel
   ^5.8.23
-    ewnd9/badtaste
+    badtaste
   ^5.8.5
-    ewnd9/pw3
+    pw3
   ^5.8.21
-    ewnd9/rutor-notify
-    ewnd9/split-torrent-release
-    ewnd9/split-tracklist
-    ewnd9/trakt-utils
-    ewnd9/universal-api
-    ewnd9/universal-api-test
-    ewnd9/vk-universal-api
+    rutor-notify
+    split-torrent-release
+    split-tracklist
+    trakt-utils
+    universal-api
+    universal-api-test
+    vk-universal-api
 babel-cli
   ^6.4.0
-    ewnd9/dictionary-cli
-    ewnd9/media-center
-    ewnd9/show-episode-format
-    ewnd9/the-feed
-    ewnd9/trakt-cli
+    dictionary-cli
+    media-center
+    record-desktop
+    show-episode-format
+    the-feed
+    trakt-cli
+  ^6.5.1
+    lab
+    tracklister-app
 babel-core
   ^6.4.0
-    ewnd9/dictionary-cli
-    ewnd9/media-center
-    ewnd9/show-episode-format
-    ewnd9/the-feed
-    ewnd9/trakt-cli
+    dictionary-cli
+    media-center
+    record-desktop
+    show-episode-format
+    the-feed
+    trakt-cli
+  ^6.5.2
+    lab
+    webpackman
+  ^6.5.1
+    tracklister-app
   ^5.4.7
-    ewnd9/xavier-browsers
+    xavier-browsers
 babel-eslint
   ^5.0.0-beta9
-    ewnd9/media-center
-    ewnd9/trakt-cli
+    cached-npm-repo
+    media-center
+    tracklister-app
+    trakt-cli
+  ^5.0.0
+    record-desktop
 babel-loader
   ^6.2.1
-    ewnd9/media-center
-    ewnd9/the-feed
+    record-desktop
   ^5.4.0
-    ewnd9/universal-api-test
+    universal-api-test
+  ^6.2.2
+    webpackman
   ^5.1.3
-    ewnd9/xavier-browsers
+    xavier-browsers
 babel-plugin-lodash
   ^1.1.0
-    ewnd9/dictionary-cli
+    dictionary-cli
+    record-desktop
 babel-plugin-transform-runtime
   ^6.4.0
-    ewnd9/media-center
+    media-center
 babel-polyfill
   ^6.3.14
-    ewnd9/dictionary-cli
+    dictionary-cli
   ^6.5.0
-    ewnd9/media-center
+    media-center
   ^6.0.16
-    ewnd9/pw3
+    pw3
 babel-preset-es2015
   ^6.3.13
-    ewnd9/dictionary-cli
-    ewnd9/media-center
-    ewnd9/show-episode-format
-    ewnd9/the-feed
-    ewnd9/trakt-cli
+    dictionary-cli
+    media-center
+    record-desktop
+    show-episode-format
+    the-feed
+    trakt-cli
+  ^6.5.0
+    lab
+    tracklister-app
 babel-preset-react
   ^6.3.13
-    ewnd9/media-center
-    ewnd9/the-feed
+    media-center
+    record-desktop
+    the-feed
+  ^6.5.0
+    tracklister-app
+babel-preset-react-hmre
+  ^1.1.0
+    media-center
+    the-feed
+    tracklister-app
 babel-preset-stage-0
+  ^6.5.0
+    lab
+    tracklister-app
   ^6.3.13
-    ewnd9/media-center
-    ewnd9/the-feed
+    media-center
+    record-desktop
+    the-feed
 babel-register
   ^6.4.3
-    ewnd9/dictionary-cli
+    dictionary-cli
 blessed
   ^0.1.80
-    ewnd9/badtaste
+    badtaste
 bluebird
   ^2.10.0
-    ewnd9/badtaste
-    ewnd9/universal-api
-    ewnd9/workout-cli
+    badtaste
+    universal-api
+    workout-cli
   ^2.9.32
-    ewnd9/brightness-interactive-cli
-    ewnd9/telegram-bot-cli
+    brightness-interactive-cli
+    telegram-bot-cli
   ^2.9.34
-    ewnd9/dictionary-cli
-    ewnd9/watchtower-cli
+    dictionary-cli
+    watchtower-cli
   ^3.1.5
-    ewnd9/inquirer-bluebird
+    inquirer-bluebird
   ^3.0.0
-    ewnd9/inquirer-credentials
+    inquirer-credentials
   ^2.10.2
-    ewnd9/inquirer-menu
-    ewnd9/media-center
-    ewnd9/rutor-notify
+    media-center
+    rutor-notify
   ^3.0.6
-    ewnd9/the-feed
+    the-feed
   ^3.1.1
-    ewnd9/trakt-utils
+    trakt-utils
   ^2.9.27
-    ewnd9/xavier
-    ewnd9/xavier-browsers
+    xavier
+    xavier-browsers
 body-parser
   ^1.14.2
-    ewnd9/media-center
+    media-center
 bootstrap
   ^3.3.6
-    ewnd9/media-center
+    media-center
+    record-desktop
 brightness
   ^2.0.1
-    ewnd9/brightness-interactive-cli
+    brightness-interactive-cli
 browserify
   ^13.0.0
-    ewnd9/universal-api-test
+    universal-api-test
 chai
   ^3.3.0
-    ewnd9/badtaste
+    badtaste
   ^3.0.0
-    ewnd9/dot-file-config
-    ewnd9/telegram-bot-cli
+    dot-file-config
+    telegram-bot-cli
   ^3.2.0
-    ewnd9/dropbox-symlink
-    ewnd9/inquirer-menu
-    ewnd9/media-center
-    ewnd9/progress-control
-    ewnd9/pw3
-    ewnd9/rutor-notify
-    ewnd9/split-tracklist
-    ewnd9/universal-api
-    ewnd9/universal-api-test
+    dropbox-symlink
+    media-center
+    progress-control
+    pw3
+    rutor-notify
+    split-tracklist
+    universal-api
+    universal-api-test
 chalk
   ^1.1.1
-    ewnd9/dictionary-cli
-    ewnd9/rutor-notify
-    ewnd9/the-feed
-    ewnd9/trakt-cli
+    dictionary-cli
+    rutor-notify
+    the-feed
+    trakt-cli
   ^1.0.0
-    ewnd9/generator-ewnd9-npm
+    generator-ewnd9-npm
   ^1.1.0
-    ewnd9/watchtower-cli
+    watchtower-cli
 cheerio
   ^0.19.0
-    ewnd9/rutor-notify
-    ewnd9/the-feed
+    rutor-notify
+    the-feed
 chokidar
   ^1.4.2
-    ewnd9/media-center
+    media-center
 classnames
   ^2.2.3
-    ewnd9/media-center
+    media-center
   ^2.2.1
-    ewnd9/the-feed
+    the-feed
 cli-cursor
   ^1.0.1
-    ewnd9/progress-control
+    progress-control
 clone
   ^1.0.2
-    ewnd9/inquirer-question
+    inquirer-question
 combokeys
   ^2.4.3
-    ewnd9/xavier
+    xavier
 concat-stream
-  ^1.5.0
-    ewnd9/dictionary-cli
   ^1.5.1
-    ewnd9/inquirer-test
+    cached-npm-repo
+    inquirer-test
+  ^1.5.0
+    dictionary-cli
+configstore
+  ^2.0.0
+    cached-npm-repo
+  ^1.4.0
+    record-desktop
 copy-paste
   ^1.1.4
-    ewnd9/pw3
+    pw3
 cors
   ^2.7.1
-    ewnd9/media-center
+    media-center
 coveralls
   ^2.11.6
-    ewnd9/dictionary-cli
-    ewnd9/split-torrent-release
+    dictionary-cli
+    split-torrent-release
   ^2.11.3
-    ewnd9/pw3
+    pw3
 css-loader
-  ^0.23.0
-    ewnd9/media-center
-    ewnd9/the-feed
+  ^0.23.1
+    record-desktop
+  ^0.15.4
+    webpackman
 detect-node
   ^2.0.3
-    ewnd9/universal-api
+    universal-api
 dot-file-config
   ^0.5.0
-    ewnd9/badtaste
-    ewnd9/media-center
-    ewnd9/workout-cli
+    badtaste
+    media-center
+    workout-cli
   ^0.6.0
-    ewnd9/dictionary-cli
+    dictionary-cli
   ^0.6.1
-    ewnd9/inquirer-credentials
+    inquirer-credentials
   0.0.2
-    ewnd9/telegram-bot-cli
+    telegram-bot-cli
   0.0.1
-    ewnd9/xavier
+    xavier
 dotenv
   ^1.2.0
-    ewnd9/rutor-notify
+    rutor-notify
 electron-prebuilt
+  ^0.36.9
+    record-desktop
   ^0.35.2
-    ewnd9/xavier
+    xavier
 electron-rebuild
   ^1.0.2
-    ewnd9/xavier
+    xavier
 eslint
   ^1.10.3
-    ewnd9/media-center
-    ewnd9/trakt-cli
+    cached-npm-repo
+    media-center
+    record-desktop
+    tracklister-app
+    trakt-cli
 eslint-plugin-react
   ^3.14.0
-    ewnd9/media-center
+    media-center
+  ^3.16.1
+    record-desktop
+    tracklister-app
 exit-hook
   ^1.1.1
-    ewnd9/badtaste
-    ewnd9/media-center
+    badtaste
+    media-center
 expand-tilde
   1.2.0
-    ewnd9/the-feed
+    the-feed
 express
   ^4.13.3
-    ewnd9/media-center
-    ewnd9/the-feed
+    media-center
+    the-feed
   ^4.12.4
-    ewnd9/xavier
+    xavier
 express-cors
   0.0.3
-    ewnd9/the-feed
+    the-feed
 extract-text-webpack-plugin
   ^1.0.1
-    ewnd9/media-center
+    webpackman
 file-loader
   ^0.8.5
-    ewnd9/media-center
-    ewnd9/the-feed
+    record-desktop
+    webpackman
 fkill
   ^3.1.0
-    ewnd9/media-center
+    media-center
+font-awesome
+  ^4.5.0
+    tracklister-app
 fs-mock
   ^1.2.1
-    ewnd9/dropbox-symlink
+    dropbox-symlink
 github-search-api
   0.0.3
-    ewnd9/watchtower-cli
+    watchtower-cli
 glob
   ^5.0.13
-    ewnd9/telegram-bot-cli
+    telegram-bot-cli
 globby
   ^4.0.0
-    ewnd9/media-center
+    media-center
+    record-desktop
 got
   ^5.3.1
-    ewnd9/dictionary-cli
+    dictionary-cli
   ^6.0.1
-    ewnd9/media-center
+    media-center
   ^6.1.1
-    ewnd9/pw3
+    pw3
   ^4.2.0
-    ewnd9/rutor-notify
+    rutor-notify
   ^5.1.0
-    ewnd9/the-feed
+    the-feed
   ^6.0.0
-    ewnd9/trakt-utils
+    trakt-utils
 hasha
   ^2.2.0
-    ewnd9/cached-npm-install
-history
-  ^1.17.0
-    ewnd9/the-feed
+    cached-npm-install
+html-webpack-plugin
+  ^1.6.0
+    webpackman
+husky
+  ^0.11.3
+    cached-npm-repo
 id3js
   ^1.1.3
-    ewnd9/badtaste
+    badtaste
+image-loader
+  0.0.1
+    webpackman
+imgur
+  ^0.1.7
+    record-desktop
+imports-loader
+  ^0.6.5
+    webpackman
 inquirer
   ^0.8.5
-    ewnd9/brightness-interactive-cli
-    ewnd9/telegram-bot-cli
+    brightness-interactive-cli
+    telegram-bot-cli
   ^0.11.4
-    ewnd9/inquirer-bluebird
-    ewnd9/inquirer-test
+    inquirer-bluebird
+    inquirer-test
 inquirer-bluebird
   ^1.0.1
-    ewnd9/inquirer-credentials
-    ewnd9/watchtower-cli
+    inquirer-credentials
+    watchtower-cli
   ^1.0.2
-    ewnd9/inquirer-question
+    inquirer-question
   ^1.0.6
-    ewnd9/pw3
+    pw3
+    trakt-cli
   ^1.0.0
-    ewnd9/telegram-bot-cli
+    telegram-bot-cli
 inquirer-credentials
   ^1.2.0
-    ewnd9/media-center
+    media-center
   ^2.0.0
-    ewnd9/trakt-cli
+    trakt-cli
 inquirer-menu
   ^0.2.0
-    ewnd9/badtaste
+    badtaste
   0.2.0
-    ewnd9/workout-cli
+    workout-cli
 inquirer-question
   ^1.1.1
-    ewnd9/badtaste
-    ewnd9/media-center
-    ewnd9/the-feed
+    badtaste
+    media-center
+    the-feed
+  ^1.2.0
+    inquirer-menu
   ^1.1.0
-    ewnd9/inquirer-menu
-    ewnd9/workout-cli
+    workout-cli
 inquirer-test
   ^1.0.0
-    ewnd9/inquirer-bluebird
+    inquirer-bluebird
   ^1.0.2
-    ewnd9/inquirer-credentials
+    inquirer-credentials
+  ^1.0.5
+    inquirer-menu
+  ^1.0.4
+    inquirer-question
 intel
   ^1.0.2
-    ewnd9/badtaste
+    badtaste
 ip
   ^0.3.3
-    ewnd9/xavier
+    xavier
 isomorphic-fetch
   ^2.2.0
-    ewnd9/media-center
-    ewnd9/the-feed
+    media-center
+    the-feed
 istanbul
   ^0.3.17
-    ewnd9/pw3
+    pw3
 jade
   ^1.10.0
-    ewnd9/xavier
+    xavier
 jquery
   ^2.1.4
-    ewnd9/xavier
-    ewnd9/xavier-browsers
+    xavier
+    xavier-browsers
 js-yaml
   ^3.4.6
-    ewnd9/the-feed
+    the-feed
 karma
   ^0.13.19
-    ewnd9/universal-api-test
+    universal-api-test
 karma-chrome-launcher
   ^0.2.2
-    ewnd9/universal-api-test
+    universal-api-test
 karma-env-preprocessor
   ^0.1.1
-    ewnd9/universal-api-test
+    universal-api-test
 karma-firefox-launcher
   ^0.1.7
-    ewnd9/universal-api-test
+    universal-api-test
 karma-mocha
   ^0.2.1
-    ewnd9/universal-api-test
+    universal-api-test
 karma-phantomjs-launcher
   ^1.0.0
-    ewnd9/universal-api-test
+    universal-api-test
 karma-safari-launcher
   ^0.1.1
-    ewnd9/universal-api-test
+    universal-api-test
 karma-sauce-launcher
   ^0.3.0
-    ewnd9/universal-api-test
-    ewnd9/universal-api-test
+    universal-api-test
+    universal-api-test
 karma-webpack
   ^1.7.0
-    ewnd9/universal-api-test
+    universal-api-test
 kexec
   ^1.2.0
-    ewnd9/watchtower-cli
+    watchtower-cli
 keypress
   ^0.2.1
-    ewnd9/media-center
-    ewnd9/progress-control
+    media-center
+    progress-control
 lodash
   ^3.10.1
-    ewnd9/badtaste
-    ewnd9/dictionary-cli
-    ewnd9/the-feed
-    ewnd9/trakt-utils
-    ewnd9/watchtower-cli
+    badtaste
+    dictionary-cli
+    record-desktop
+    the-feed
+    trakt-utils
+    watchtower-cli
+  ^4.5.0
+    record-desktop
   ^3.10.0
-    ewnd9/telegram-bot-cli
+    telegram-bot-cli
   ^3.9.3
-    ewnd9/xavier
-    ewnd9/xavier-browsers
+    xavier
+    xavier-browsers
 meow
   ^3.4.1
-    ewnd9/badtaste
-    ewnd9/media-center
+    badtaste
+    media-center
   ^3.7.0
-    ewnd9/dictionary-cli
-    ewnd9/the-feed
+    dictionary-cli
+    the-feed
+    trakt-cli
   ^3.3.0
-    ewnd9/pw3
-    ewnd9/workout-cli
+    pw3
+    workout-cli
 minimist
   ^1.1.1
-    ewnd9/telegram-bot-cli
+    telegram-bot-cli
   ^1.1.3
-    ewnd9/watchtower-cli
+    watchtower-cli
+  ^1.2.0
+    webpackman
 mkdirp
   ^0.5.1
-    ewnd9/media-center
+    media-center
+    record-desktop
 mocha
   ^2.3.3
-    ewnd9/badtaste
+    badtaste
   ^2.2.5
-    ewnd9/dot-file-config
-    ewnd9/dropbox-symlink
-    ewnd9/media-center
-    ewnd9/progress-control
-    ewnd9/pw3
-    ewnd9/rutor-notify
-    ewnd9/split-tracklist
-    ewnd9/telegram-bot-cli
-    ewnd9/universal-api
-    ewnd9/universal-api-test
+    dot-file-config
+    dropbox-symlink
+    media-center
+    progress-control
+    pw3
+    rutor-notify
+    split-tracklist
+    telegram-bot-cli
+    universal-api
+    universal-api-test
+  ^2.4.5
+    generator-ewnd9-eslint
   *
-    ewnd9/generator-ewnd9-npm
-  ^2.3.0
-    ewnd9/inquirer-menu
+    generator-ewnd9-npm
 mock-fs
   ^3.6.0
-    ewnd9/media-center
+    media-center
 moment
   ^2.11.0
-    ewnd9/media-center
+    media-center
   ^2.10.6
-    ewnd9/rutor-notify
-    ewnd9/the-feed
-    ewnd9/workout-cli
+    rutor-notify
+    the-feed
+    workout-cli
   ^2.11.1
-    ewnd9/trakt-utils
+    trakt-utils
 morgan
   ^1.6.1
-    ewnd9/media-center
-    ewnd9/the-feed
+    media-center
+    the-feed
   ^1.5.3
-    ewnd9/xavier
+    xavier
 newrelic
   ^1.22.2
-    ewnd9/rutor-notify
+    rutor-notify
 nock
   ^3.6.0
-    ewnd9/media-center
+    media-center
   ^3.4.0
-    ewnd9/the-feed
+    the-feed
   ^5.2.1
-    ewnd9/trakt-utils
+    trakt-utils
 node-cache
   ^3.1.0
-    ewnd9/media-center
+    media-center
 node-crontab
   0.0.8
-    ewnd9/workout-cli
+    workout-cli
 node-libs-browser
   ^0.5.2
-    ewnd9/xavier-browsers
+    xavier-browsers
 node-notifier
   ^4.4.0
-    ewnd9/media-center
+    media-center
+  ^4.5.0
+    record-desktop
   ^4.2.3
-    ewnd9/workout-cli
+    workout-cli
 nodemon
   ^1.8.1
-    ewnd9/media-center
-    ewnd9/show-episode-format
-    ewnd9/split-torrent-release
-    ewnd9/trakt-cli
-    ewnd9/trakt-utils
+    media-center
+    record-desktop
+    show-episode-format
+    split-torrent-release
+    trakt-cli
+    trakt-utils
   ^1.4.1
-    ewnd9/the-feed
+    the-feed
 npm-run-all
   ^1.4.0
-    ewnd9/media-center
+    media-center
+    record-desktop
   ^1.3.4
-    ewnd9/the-feed
+    the-feed
 npmconf
   ^2.1.2
-    ewnd9/generator-ewnd9-npm
+    generator-ewnd9-npm
 nyc
   ^5.3.0
-    ewnd9/dictionary-cli
+    dictionary-cli
   ^4.0.1
-    ewnd9/split-torrent-release
+    split-torrent-release
+  ^5.6.0
+    the-feed
 object-assign
   ^4.0.1
-    ewnd9/generator-ewnd9-npm
+    generator-ewnd9-npm
 omxplayer
   0.0.1
-    ewnd9/media-center
+    media-center
 opbeat
   ^3.1.4
-    ewnd9/the-feed
+    the-feed
+opener
+  ^1.4.1
+    cached-npm-repo
 opn
   ^3.0.2
-    ewnd9/watchtower-cli
+    watchtower-cli
 phantomjs-prebuilt
   ^2.1.3
-    ewnd9/universal-api-test
+    universal-api-test
+pify
+  ^2.3.0
+    record-desktop
+pinkie
+  ^2.0.4
+    inquirer-menu
 pinkie-promise
   ^2.0.0
-    ewnd9/inquirer-test
+    inquirer-test
 player
   ^0.6.1
-    ewnd9/badtaste
+    badtaste
 playmusic
   ^2.1.0
-    ewnd9/badtaste
+    badtaste
 pm2
   ^0.14.5
-    ewnd9/workout-cli
+    workout-cli
+postcss-cssnext
+  ^2.4.0
+    webpackman
+postcss-import
+  ^8.0.2
+    webpackman
 postcss-loader
-  ^0.8.0
-    ewnd9/media-center
+  ^0.8.1
+    webpackman
 pouchdb
   ^5.1.0
-    ewnd9/media-center
-    ewnd9/the-feed
+    media-center
+    the-feed
   ^5.0.0
-    ewnd9/rutor-notify
+    rutor-notify
 pouchdb-find
   ^0.8.0
-    ewnd9/the-feed
+    the-feed
 pouchdb-hoodie-api
   ^1.6.0
-    ewnd9/rutor-notify
-    ewnd9/the-feed
+    rutor-notify
+    the-feed
 pre-commit
   ^1.1.2
-    ewnd9/media-center
-precss
-  ^1.4.0
-    ewnd9/media-center
+    media-center
+    tracklister-app
 pretty-bytes
   ^2.0.1
-    ewnd9/pw3
+    pw3
+  ^3.0.1
+    record-desktop
 progress
   ^1.1.8
-    ewnd9/progress-control
+    progress-control
 proxyquire
+  ^1.7.4
+    cached-npm-repo
   ^1.6.0
-    ewnd9/dropbox-symlink
-    ewnd9/telegram-bot-cli
+    dropbox-symlink
+    telegram-bot-cli
   ^1.7.3
-    ewnd9/media-center
+    media-center
+raw-loader
+  ^0.5.1
+    webpackman
 react
   ^0.14.4
-    ewnd9/media-center
+    media-center
+  ^0.14.6
+    record-desktop
   ^0.14.3
-    ewnd9/the-feed
+    the-feed
+  ^0.14.7
+    tracklister-app
+react-cl-audio-player
+  ^1.0.0
+    tracklister-app
+react-component-gallery
+  ^1.2.1
+    record-desktop
 react-dom
   ^0.14.4
-    ewnd9/media-center
+    media-center
+  ^0.14.6
+    record-desktop
   ^0.14.3
-    ewnd9/the-feed
+    the-feed
+  ^0.14.7
+    tracklister-app
 react-hot-loader
   ^1.3.0
-    ewnd9/media-center
+    media-center
 react-infinite-scroll
   ^0.1.5
-    ewnd9/the-feed
+    the-feed
 react-modal
   ^0.6.1
-    ewnd9/media-center
+    media-center
 react-redux
   ^4.0.6
-    ewnd9/the-feed
+    the-feed
 react-router
-  ^1.0.3
-    ewnd9/the-feed
+  ^2.0.0
+    record-desktop
+    the-feed
 react-select
   ^1.0.0-beta8
-    ewnd9/media-center
+    media-center
 react-spinkit
   ^1.1.4
-    ewnd9/media-center
+    media-center
 react-swipeable
   ^3.1.0
-    ewnd9/the-feed
+    the-feed
 react-tooltip
   ^1.0.3
-    ewnd9/the-feed
+    the-feed
 redux
   ^3.0.5
-    ewnd9/the-feed
+    the-feed
 redux-logger
   ^2.3.1
-    ewnd9/the-feed
-redux-simple-router
-  ^1.0.2
-    ewnd9/the-feed
+    the-feed
 redux-thunk
   ^1.0.3
-    ewnd9/the-feed
+    the-feed
 request
   ^2.57.0
-    ewnd9/xavier
+    xavier
 rollbar
   ^0.5.8
-    ewnd9/rutor-notify
+    rutor-notify
+sanitize-html
+  ^1.11.3
+    the-feed
 script-loader
   ^0.6.1
-    ewnd9/media-center
+    media-center
+    webpackman
 show-episode-format
   ^1.0.2
-    ewnd9/pw3
+    pw3
   ^1.0.1
-    ewnd9/trakt-cli
+    trakt-cli
 sinon
   ^1.17.2
-    ewnd9/media-center
+    media-center
 socket.io
   ^1.4.2
-    ewnd9/media-center
+    media-center
   ^1.3.7
-    ewnd9/xavier
+    xavier
 socket.io-client
   ^1.4.2
-    ewnd9/media-center
+    media-center
   ^1.3.5
-    ewnd9/xavier-browsers
+    xavier-browsers
+sorted-object
+  ^2.0.0
+    generator-ewnd9-eslint
+    generator-ewnd9-npm
 source-map-support
   ^0.4.0
-    ewnd9/media-center
-    ewnd9/the-feed
+    media-center
+    the-feed
 spawn-args
   ^0.1.0
-    ewnd9/watchtower-cli
+    watchtower-cli
 split-torrent-release
   ^1.1.0
-    ewnd9/media-center
+    media-center
 split-tracklist
   ^1.1.1
-    ewnd9/badtaste
+    badtaste
+    tracklister-app
 style-loader
   ^0.13.0
-    ewnd9/media-center
-    ewnd9/the-feed
+    record-desktop
+  ^0.12.3
+    webpackman
 superagent
   ^1.4.0
-    ewnd9/universal-api
+    universal-api
 superagent-jsonp
   0.0.5
-    ewnd9/universal-api
+    universal-api
 symlink-or-copy
   ^1.0.1
-    ewnd9/dropbox-symlink
+    dropbox-symlink
 table
   ^3.7.4
-    ewnd9/the-feed
+    the-feed
 telegram-bot-api
   ^0.3.0
-    ewnd9/telegram-bot-cli
+    telegram-bot-cli
 trakt-utils
   ^0.3.0
-    ewnd9/media-center
-    ewnd9/trakt-cli
+    media-center
+    trakt-cli
 twitter
   ^1.2.5
-    ewnd9/rutor-notify
-    ewnd9/the-feed
+    rutor-notify
+    the-feed
 universal-api
   ^0.2.0
-    ewnd9/vk-universal-api
+    vk-universal-api
 universal-api-test
   0.0.2
-    ewnd9/vk-universal-api
+    vk-universal-api
 update-notifier
   ^0.5.0
-    ewnd9/badtaste
+    badtaste
   ^0.6.0
-    ewnd9/dictionary-cli
-    ewnd9/trakt-cli
+    dictionary-cli
+    trakt-cli
 url-loader
   ^0.5.7
-    ewnd9/media-center
+    record-desktop
+  ^0.5.6
+    webpackman
 user-home
   ^2.0.0
-    ewnd9/cached-npm-install
-    ewnd9/dot-file-config
-    ewnd9/dropbox-symlink
-    ewnd9/generator-ewnd9-npm
-    ewnd9/inquirer-credentials
-    ewnd9/media-center
-    ewnd9/the-feed
+    cached-npm-install
+    dot-file-config
+    dropbox-symlink
+    generator-ewnd9-npm
+    inquirer-credentials
+    media-center
+    the-feed
 vk-universal-api
   0.0.2
-    ewnd9/badtaste
-    ewnd9/the-feed
+    badtaste
+    the-feed
 webpack
-  ^1.12.9
-    ewnd9/media-center
-    ewnd9/the-feed
+  ^1.12.11
+    record-desktop
   ^1.12.12
-    ewnd9/universal-api-test
+    universal-api-test
+  ^1.12.13
+    webpackman
   ^1.9.10
-    ewnd9/xavier-browsers
+    xavier-browsers
 webpack-dev-server
-  ^1.14.0
-    ewnd9/media-center
-    ewnd9/the-feed
+  ^1.14.1
+    record-desktop
+    webpackman
+webpack-target-electron-renderer
+  ^0.4.0
+    record-desktop
+webpackman
+  ^0.1.0
+    media-center
+    tracklister-app
+  ^0.3.2
+    the-feed
+whereis
+  ^0.4.0
+    record-desktop
+winston
+  ^2.1.1
+    record-desktop
 x-ray
   ^2.0.2
-    ewnd9/the-feed
+    the-feed
 x11
   ^2.0.2
-    ewnd9/media-center
+    media-center
+  ^2.0.5
+    record-desktop
 yeoman-generator
   ^0.19.0
-    ewnd9/generator-ewnd9-npm
-    ewnd9/generator-ewnd9-eslint
+    generator-ewnd9-eslint
+    generator-ewnd9-npm
 yosay
   ^1.0.2
-    ewnd9/generator-ewnd9-npm
-    ewnd9/generator-ewnd9-eslint
+    generator-ewnd9-eslint
+    generator-ewnd9-npm
