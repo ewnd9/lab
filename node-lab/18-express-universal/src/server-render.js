@@ -1,4 +1,6 @@
 import React from 'react';
+import fs from 'fs';
+
 import { renderToString } from 'react-dom/server';
 import { RouterContext, createMemoryHistory, match } from 'react-router';
 import { createStore, applyMiddleware } from 'redux';
@@ -9,17 +11,27 @@ import { trigger } from 'redial';
 import routes from './routes';
 import configureStore from './configure-store';
 
+const html = fs.readFileSync(__dirname + '/index.html', 'utf-8');
+
 export default path => new Promise((resolve, reject) => {
   const store = configureStore();
   const { dispatch, getState } = store;
 
   const history = createMemoryHistory(path);
-  console.log(path)
 
   match({ routes, history }, (err, redirectLocation, renderProps) => {
     if (err) {
       throw err;
     };
+
+    if (!renderProps) {
+      const state = getState();
+      const html = renderToString(
+        <div>Not found</div>
+      );
+
+      resolve({ html, state });
+    }
 
     const { components } = renderProps;
 
@@ -43,4 +55,9 @@ export default path => new Promise((resolve, reject) => {
       })
       .catch(reject);
   });
+})
+.then(data => {
+  return html
+    .replace('<div id="root"></div>', `<div id="root">${data.html}</div>`)
+    .replace('<script id="initial-state"></script>', `<script id="initial-state">window.INITIAL_STATE = ${JSON.stringify(data.state)};</script>`);
 });

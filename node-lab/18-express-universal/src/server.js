@@ -1,47 +1,32 @@
 'use strict';
 
 import express from 'express';
-const app = express();
-
 import morgan from 'morgan';
 
-app.use(morgan('request: :remote-addr :method :url :status'));
-
 import renderReact from './server-render';
-import fs from 'fs';
 
-app.get('/bundle.js', (req, res) => {
-  fs.createReadStream(__dirname + '/public/bundle.js').pipe(res);
-});
+const app = express();
 
-app.get('/favicon.ico', (req, res) => {
-  fs.createReadStream(__dirname + '/public/bundle.js').pipe(res);
-});
+app.use(morgan('request: :remote-addr :method :url :status'));
+app.get('/', reactRoute);
+app.use(express.static(__dirname + '/public'));
+app.get('*', reactRoute);
 
-app.get('*', (req, res) => {
+function reactRoute(req, res, next) {
   renderReact(req.path)
-    .then(data => {
-      const html = `
-        <!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="utf-8" />
-            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-          </head>
-          <body>
-            <div id="root">${data.html}</div>
-            <script>window.INITIAL_STATE = ${JSON.stringify(data.state)};</script>
-            <script src="/bundle.js"></script>
-          </body>
-        </html>
-     `;
+    .then(html => res.end(html))
+    .catch(err => next(err));
+}
 
-      res.end(html);
-    })
-    .catch(err => console.log(err.stack));
+app.use(function(err, req, res, next) { // should be last
+  if (!err) {
+    next();
+    return;
+  }
+
+  console.log(err.stack);
+  res.status(err.status || 500).json({ status: 'error' });
 });
-
 
 const port = 3000;
 app.listen(port, () => console.log(`localhost:${port}`));
