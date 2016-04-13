@@ -1,14 +1,4 @@
-// import * as api from '../api';
-
-const api = {
-  findCategories() {
-    return Promise.resolve([
-      { id: 1, title: 'main' },
-      { id: 2, title: 'about' },
-      { id: 3, title: 'test' }
-    ]);
-  }
-};
+import * as api from '../api';
 
 export const REQUEST_CATEGORIES = 'REQUEST_CATEGORIES';
 export const RECIEVE_CATEGORIES = 'RECIEVE_CATEGORIES';

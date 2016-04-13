@@ -4,9 +4,12 @@ import express from 'express';
 import morgan from 'morgan';
 import path from 'path';
 
+import categoriesRouter from './routes/categories';
+
 const app = express();
 
 app.use(morgan('request: :remote-addr :method :url :status'));
+app.use(categoriesRouter);
 
 if (process.env.NODE_ENV === 'production') {
   const renderReact = require('./server-render').default;

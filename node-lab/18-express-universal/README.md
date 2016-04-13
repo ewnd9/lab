@@ -1,7 +1,9 @@
 ## Roadmap
 
 - [x] Bundling backend
-- [ ] Api requests
+- [x] Api requests
+- [ ] `nodemon` replacement (breaks hmr)
+- [ ] fix `webpack.config.prod.js` for backend build (split them?)
 
 ## Install
 
