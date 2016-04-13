@@ -10,7 +10,7 @@ html, body {
   box-sizing: inherit;
 }
 
-.categories {
+.container {
   width: 800px;
   margin: 0 auto;
 }

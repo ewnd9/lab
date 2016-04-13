@@ -4,7 +4,8 @@ import styles from './style.css';
 import { provideHooks } from 'redial';
 import { connect } from 'react-redux';
 
-import { fetchCategories } from '../actions/categories-actions';
+import { fetchCategories } from '../../actions/categories-actions';
+import { Link } from 'react-router';
 
 function mapStateToProps(state) {
   const { categories } = state;
@@ -26,7 +27,11 @@ const Main = React.createClass({
       <div className={styles.categories}>
         {
           categories.map((category, index) => (
-            <div key={index}>#{category.id}: {category.title}</div>
+            <div key={index}>
+              <Link to={`/category/${category.id}`} className={styles.link}>
+                #{category.id}: {category.title}
+              </Link>
+            </div>
           ))
         }
       </div>
