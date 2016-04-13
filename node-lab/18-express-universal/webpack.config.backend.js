@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var fs = require('fs');
+var nodeExternals = require('webpack-node-externals');
 
 var config = require(__dirname + '/webpack.config.prod');
 
@@ -10,13 +11,6 @@ config.node = {
   __dirname: true
 };
 config.output.filename = 'backend.js';
-
-config.externals = function(context, request, cb) {
-  if(/^[a-z\-0-9]+$/.test(request)) {
-    cb(null, 'commonjs ' + request);
-    return;
-  }
-  cb();
-};
+config.externals = [nodeExternals()];
 
 module.exports = config;
