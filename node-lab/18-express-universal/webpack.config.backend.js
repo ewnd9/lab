@@ -9,6 +9,7 @@ config.node = {
   __filename: true,
   __dirname: true
 };
+config.output.filename = 'backend.js';
 
 config.externals = function(context, request, cb) {
   if(/^[a-z\-0-9]+$/.test(request)) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.css';
+import styles from './style.css';
 
 import { provideHooks } from 'redial';
 import { connect } from 'react-redux';
@@ -23,7 +23,7 @@ const Main = React.createClass({
     const { categories: { categories } } = this.props;
 
     return (
-      <div>
+      <div className={styles.categories}>
         {
           categories.map((category, index) => (
             <div key={index}>#{category.id}: {category.title}</div>

@@ -5,23 +5,23 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var argv = require('minimist')(process.argv.slice(2));
 var cwd = process.cwd();
 
-var entry = './src/client.js';
-var html = './src/components/index.html';
-var output = './dist';
+var entry = __dirname + '/src/client.js';
+var html = __dirname + '/src/components/index.html';
+var output = __dirname + '/dist';
 var vendors = ['react'];
 var publicPath = argv['x-public-path'] || '/';
 
 module.exports = {
-  entry: {
-    app: entry,
-    vendors: vendors
-  },
+  entry: [
+    'webpack-hot-middleware/client?reload=true',
+    entry
+  ],
   devtool: 'cheap-module-source-map',
   output: {
     filename: '[name].bundle.js',
     sourceMapFilename: '[file].map',
     path: output,
-    // publicPath: publicPath
+    publicPath: publicPath
   },
   resolve: {
     root: [
@@ -89,7 +89,7 @@ module.exports = {
   },
   devServer: {
     contentBase: output,
-    noInfo: true,
+    noInfo: false,
     hot: true,
     inline: true,
     historyApiFallback: true

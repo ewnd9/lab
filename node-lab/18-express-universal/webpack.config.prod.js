@@ -7,6 +7,10 @@ if (typeof process.env.NODE_ENV === 'undefined') {
 
 var config = require(__dirname + '/webpack.config');
 
+config.entry = {
+  app: __dirname + '/src/client',
+  vendors: ['react']
+};
 config.devtool = 'source-map';
 config.output.filename = '[name].bundle.[hash].js';
 

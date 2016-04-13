@@ -2,9 +2,9 @@
   "name": "18-express-universal",
   "private": true,
   "scripts": {
-    "start:dev": "BABEL_ENV=backend nodemon src/server --exec babel-node",
+    "start": "node dist/backend",
+    "start:dev": "babel-node src/server",
     "build": "rm -rf dist && npm run build:backend && npm run build:frontend",
-    "build": "rm -rf dist && npm run build:backend",
     "build:backend": "NODE_ENV=production webpack --config webpack.config.backend.js",
     "build:frontend": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,16 +19,18 @@
     "react-router": "^2.0.1",
     "redial": "^0.4.1",
     "redux": "^3.3.1",
-    "redux-thunk": "^2.0.1",
-    "trumpet": "^1.7.2"
+    "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
     "babel-loader": "^6.2.4",
     "babel-plugin-webpack-loaders": "^0.4.0",
+    "babel-preset-react-hmre": "^1.1.1",
     "nodemon": "^1.9.1",
     "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.6.1",
     "webpack-externals-plugin": "^1.0.0",
+    "webpack-hot-middleware": "^2.10.0",
     "webpackman": "^0.5.0"
   }
 }
