@@ -6,7 +6,7 @@ var argv = require('minimist')(process.argv.slice(2));
 var cwd = process.cwd();
 
 var entry = __dirname + '/src/client.js';
-var html = __dirname + '/src/components/index.html';
+var html = __dirname + '/src/app/index.html';
 var output = __dirname + '/dist';
 var vendors = ['react'];
 var publicPath = argv['x-public-path'] || '/';

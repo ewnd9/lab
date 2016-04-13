@@ -8,8 +8,8 @@ import { Provider } from 'react-redux';
 
 import { trigger } from 'redial';
 
-import routes from './routes';
-import configureStore from './configure-store';
+import routes from './app/routes';
+import configureStore from './app/configure-store';
 
 const html = fs.readFileSync(__dirname + '/index.html', 'utf-8');
 
