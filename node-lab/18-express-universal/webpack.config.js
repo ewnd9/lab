@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var argv = require('minimist')(process.argv.slice(2));
 var cwd = process.cwd();
 
-var entry = __dirname + '/src/client.js';
+var entry = __dirname + '/src/app/index.js';
 var html = __dirname + '/src/app/index.html';
 var output = __dirname + '/dist';
 var vendors = ['react'];

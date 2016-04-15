@@ -8,8 +8,8 @@ import browserHistory from 'react-router/lib/browserHistory';
 
 import { Provider } from 'react-redux';
 
-import routes from './app/routes';
-import configureStore from './app/configure-store';
+import routes from './routes';
+import configureStore from './configure-store';
 
 const initialState = window.INITIAL_STATE || {};
 

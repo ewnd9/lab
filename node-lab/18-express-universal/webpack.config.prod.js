@@ -8,7 +8,7 @@ if (typeof process.env.NODE_ENV === 'undefined') {
 var config = require(__dirname + '/webpack.config');
 
 config.entry = {
-  app: __dirname + '/src/client',
+  app: config.entry[config.entry.length - 1],
   vendors: ['react']
 };
 config.devtool = 'source-map';
