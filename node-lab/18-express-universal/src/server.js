@@ -28,9 +28,12 @@ if (process.env.NODE_ENV === 'production') {
   const webpackMiddleware = require('webpack-dev-middleware');
   const webpackHotMiddleware = require('webpack-hot-middleware');
 
-  const config = require('../webpack.config');
+  const config = require('../webpack.config.dev');
   const compiler = webpack(config);
-  const middleware = webpackMiddleware(compiler, { ...config.devServer, contentBase: __dirname });
+  const middleware = webpackMiddleware(compiler, {
+    ...config.devServer, 
+    contentBase: __dirname
+  });
 
   app.use(middleware);
   app.use(webpackHotMiddleware(compiler));

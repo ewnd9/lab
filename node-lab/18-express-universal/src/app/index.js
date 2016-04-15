@@ -39,8 +39,6 @@ browserHistory.listen(location => {
       dispatch
     };
 
-    console.log(window.INITIAL_STATE);
-
     if (window.INITIAL_STATE) {
       delete window.INITIAL_STATE;
     } else {

@@ -1,15 +1,18 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+'use strict';
 
 if (typeof process.env.NODE_ENV === 'undefined') {
   process.env.NODE_ENV = 'production';
 }
 
-var config = require(__dirname + '/webpack.config');
+var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+var config = require(__dirname + '/webpack.config.dev');
+var vendors = ['react'];
 
 config.entry = {
   app: config.entry[config.entry.length - 1],
-  vendors: ['react']
+  vendors: vendors
 };
 config.devtool = 'source-map';
 config.output.filename = '[name].bundle.[hash].js';
@@ -22,14 +25,14 @@ var prodPlugins = config.plugins.reduce((total, curr) => {
   return total;
 }, [
   new webpack.optimize.OccurenceOrderPlugin(),
-  // new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.[hash].js'), // IMPORTANT BREAKS BACKEND
+  new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.[hash].js'),
   new ExtractTextPlugin('styles.css', '[name].[contenthash].css')
 ]).concat([
-  // new webpack.optimize.UglifyJsPlugin({
-  //   compressor: {
-  //     warnings: false
-  //   }
-  // })
+  new webpack.optimize.UglifyJsPlugin({
+    compressor: {
+      warnings: false
+    }
+  })
 ]);
 
 config.plugins = prodPlugins;

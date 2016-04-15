@@ -3,7 +3,6 @@
 - [x] Bundling backend
 - [x] Api requests
 - [x] `nodemon` replacement (`babel-watch`)
-- [ ] fix `webpack.config.prod.js` for backend build (split them?)
 
 ## Install
 

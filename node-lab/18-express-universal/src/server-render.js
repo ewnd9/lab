@@ -11,6 +11,7 @@ import { trigger } from 'redial';
 import routes from './app/routes';
 import configureStore from './app/configure-store';
 
+console.log(__dirname);
 const html = fs.readFileSync(__dirname + '/index.html', 'utf-8');
 
 export default path => new Promise((resolve, reject) => {
