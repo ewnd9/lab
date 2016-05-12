@@ -20,7 +20,8 @@ readFile(cacheFilePath, 'utf-8')
     return JSON.parse(file);
   }, err => {
     return {
-      cache: {}
+      cache: {},
+      descriptions: {}
     };
   })
   .then(file => {
@@ -35,7 +36,11 @@ function loadPage(file, page) {
       .all(res.body.map((r, i) => {
         if (r.fork) {
           return Promise.resolve();
-        } else if (file.cache[r.name] !== r.pushed_at) {
+        }
+
+        file.descriptions[r.name] = r.description;
+
+        if (file.cache[r.name] !== r.pushed_at) {
           file.cache[r.name] = r.pushed_at;
           return loadRepository(r, i);
         } else {

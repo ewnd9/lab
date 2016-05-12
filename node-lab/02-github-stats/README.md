@@ -1,7 +1,15 @@
-Just look at the [`nice report`](report.txt)
+:warning: Forked repositories are not processed by now 
 
 ## Usage
 
+### `report.txt`
+
 ```
-$ node fetch-files && node index
+$ npm run create-deps-report
+```
+
+### `catalog.txt`
+
+```
+$ npm run create-catalog
 ```

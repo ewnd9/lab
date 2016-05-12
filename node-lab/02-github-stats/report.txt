@@ -7,12 +7,15 @@ angular
 angular-ui-router
   ^0.2.15
     xavier
+anki-apkg-export
+  ^1.0.1
+    anki-apkg-export-app
+    anki-apkg-export-cli
 autoprefixer
   ^6.3.3
     webpackman
 ava
   ^0.8.0
-    record-desktop
     split-torrent-release
     trakt-utils
   ^0.9.0
@@ -21,17 +24,29 @@ ava
     trakt-cli
   ^0.9.1
     dictionary-cli
-    media-center
   ^0.11.0
     inquirer-credentials
   ^0.12.0
     the-feed
   ^0.13.0
+    anki-apkg-export
+    anki-apkg-export-app
+    anki-apkg-export-cli
     cached-npm-repo
+    curl-to-node
+    hain-plugin-chrome-bookmarks
     inquirer-bluebird
     inquirer-menu
     inquirer-question
     inquirer-test
+    knowledge-extractor-cli
+    record-desktop
+  ^0.14.0
+    html-preview
+    media-center
+    opensubtitles-universal-api
+    vk-auth-prompt
+    vk-google-music-export-cli
 babel
   ^5.8.5
     pw3
@@ -56,9 +71,18 @@ babel-cli
   ^6.5.1
     lab
     tracklister-app
-babel-core
-  ^5.4.7
+  ~6.6.0
+    anki-apkg-export
+    curl-to-node
+    hain-plugin-chrome-bookmarks
+    html-preview
+    opensubtitles-universal-api
+    vk-auth-prompt
+  ^6.6.0
+    hain-travis-publish-playground
+  ^6.7.5
     xavier-browsers
+babel-core
   ^6.4.0
     dictionary-cli
     media-center
@@ -71,23 +95,46 @@ babel-core
   ^6.5.2
     lab
     webpackman
+  ^6.6.0
+    hain-travis-publish-playground
+  ~6.6.0
+    html-preview
+    opensubtitles-universal-api
+  ^6.7.7
+    vk-auth-prompt
 babel-eslint
   ^5.0.0-beta9
+    anki-apkg-export
+    anki-apkg-export-app
+    anki-apkg-export-cli
     cached-npm-repo
-    media-center
+    curl-to-node
+    electron-image-menu
+    electron-save-file
+    hain-plugin-chrome-bookmarks
+    knowledge-extractor-cli
     tracklister-app
-    trakt-cli
   ^5.0.0
     record-desktop
+  ^6.0.0
+    html-preview
+    media-center
+    opensubtitles-universal-api
+    the-feed
+    trakt-cli
+    vk-auth-prompt
+    vk-google-music-export-cli
 babel-loader
-  ^5.1.3
-    xavier-browsers
   ^5.4.0
     universal-api-test
   ^6.2.1
     record-desktop
   ^6.2.2
     webpackman
+  ^6.2.4
+    hain-travis-publish-playground
+    opensubtitles-universal-api
+    xavier-browsers
 babel-plugin-lodash
   ^1.1.0
     dictionary-cli
@@ -95,6 +142,8 @@ babel-plugin-lodash
 babel-plugin-transform-runtime
   ^6.4.0
     media-center
+  ~6.6.0
+    anki-apkg-export-app
 babel-polyfill
   ^6.0.16
     pw3
@@ -102,6 +151,10 @@ babel-polyfill
     dictionary-cli
   ^6.5.0
     media-center
+  ^6.7.2
+    the-feed
+  ^6.7.4
+    opensubtitles-universal-api
 babel-preset-es2015
   ^6.3.13
     dictionary-cli
@@ -113,29 +166,51 @@ babel-preset-es2015
   ^6.5.0
     lab
     tracklister-app
+  ~6.6.0
+    anki-apkg-export
+    anki-apkg-export-app
+    curl-to-node
+    hain-plugin-chrome-bookmarks
+    html-preview
+    opensubtitles-universal-api
+    vk-auth-prompt
+  ^6.6.0
+    hain-travis-publish-playground
+    xavier-browsers
 babel-preset-react
   ^6.3.13
     media-center
     record-desktop
     the-feed
+  ~6.5.0
+    anki-apkg-export-app
   ^6.5.0
+    hain-travis-publish-playground
     tracklister-app
 babel-preset-react-hmre
   ^1.1.0
     media-center
     the-feed
     tracklister-app
+  ~1.1.1
+    anki-apkg-export-app
 babel-preset-stage-0
   ^6.3.13
     media-center
     record-desktop
     the-feed
+  ~6.5.0
+    anki-apkg-export-app
   ^6.5.0
     lab
     tracklister-app
+    xavier-browsers
 babel-register
   ^6.4.3
     dictionary-cli
+babel-watch
+  ^2.0.2
+    the-feed
 blessed
   ^0.1.80
     badtaste
@@ -164,6 +239,8 @@ bluebird
     trakt-utils
   ^3.1.5
     inquirer-bluebird
+  ^3.3.5
+    vk-google-music-export-cli
 body-parser
   ^1.14.2
     media-center
@@ -209,6 +286,8 @@ cheerio
 chokidar
   ^1.4.2
     media-center
+  ^1.4.3
+    hain-plugin-chrome-bookmarks
 classnames
   ^2.2.1
     the-feed
@@ -223,6 +302,9 @@ clone
 combokeys
   ^2.4.3
     xavier
+compression
+  ^1.6.1
+    the-feed
 concat-stream
   ^1.5.0
     dictionary-cli
@@ -234,6 +316,10 @@ configstore
     record-desktop
   ^2.0.0
     cached-npm-repo
+    knowledge-extractor-cli
+    trakt-cli
+    vk-auth-prompt
+    vk-google-music-export-cli
 copy-paste
   ^1.1.4
     pw3
@@ -251,8 +337,18 @@ css-loader
     webpackman
   ^0.23.1
     record-desktop
+curl-to-node
+  ^0.1.0
+    the-feed
+debug
+  ^2.2.0
+    vk-google-music-export-cli
+del
+  ^2.2.0
+    hain-travis-publish-playground
 detect-node
   ^2.0.3
+    opensubtitles-universal-api
     universal-api
 dot-file-config
   0.0.1
@@ -270,31 +366,90 @@ dot-file-config
 dotenv
   ^1.2.0
     rutor-notify
+electron-contextmenu-middleware
+  ^1.0.1
+    record-desktop
+electron-image-menu
+  ^1.0.0
+    record-desktop
+electron-input-menu
+  ^1.0.2
+    record-desktop
+electron-installer-debian
+  ^0.2.0
+    record-desktop
+  ^0.3.0
+    hain-travis-publish-playground
+electron-packager
+  ^5.2.1
+    hain-travis-publish-playground
+    record-desktop
 electron-prebuilt
   ^0.35.2
     xavier
   ^0.36.9
     record-desktop
+  0.37.2
+    hain-travis-publish-playground
+  ^0.37.5
+    electron-remote-require-investigation
 electron-rebuild
   ^1.0.2
     xavier
+electron-save-file
+  ^1.0.2
+    record-desktop
+electron-winstaller
+  ^2.0.5
+    hain-travis-publish-playground
 eslint
   ^1.10.3
+    anki-apkg-export
+    anki-apkg-export-app
+    anki-apkg-export-cli
     cached-npm-repo
-    media-center
+    curl-to-node
+    electron-image-menu
+    electron-save-file
+    hain-plugin-chrome-bookmarks
+    knowledge-extractor-cli
     record-desktop
     tracklister-app
+  ^2.3.0
+    hain-travis-publish-playground
+  ^2.7.0
+    html-preview
+    media-center
+    opensubtitles-universal-api
+    the-feed
     trakt-cli
+    vk-auth-prompt
+    vk-google-music-export-cli
+eslint-config-airbnb
+  ^6.1.0
+    hain-travis-publish-playground
 eslint-plugin-react
   ^3.14.0
-    media-center
+    anki-apkg-export-app
   ^3.16.1
     record-desktop
     tracklister-app
+  ^4.3.0
+    media-center
+    the-feed
+execa
+  ^0.2.2
+    generator-ewnd9-npm
+    knowledge-extractor-cli
+  ^0.4.0
+    media-center
 exit-hook
   ^1.1.1
     badtaste
     media-center
+expand-home-dir
+  0.0.3
+    anki-apkg-export-cli
 expand-tilde
   1.2.0
     the-feed
@@ -304,9 +459,6 @@ express
   ^4.13.3
     media-center
     the-feed
-express-cors
-  0.0.3
-    the-feed
 extract-text-webpack-plugin
   ^1.0.1
     webpackman
@@ -314,6 +466,12 @@ file-loader
   ^0.8.5
     record-desktop
     webpackman
+file-type
+  ^3.8.0
+    electron-save-file
+filesaverjs
+  ^0.2.1
+    anki-apkg-export-app
 fkill
   ^3.1.0
     media-center
@@ -331,6 +489,8 @@ glob
     telegram-bot-cli
 globby
   ^4.0.0
+    anki-apkg-export-cli
+    knowledge-extractor-cli
     media-center
     record-desktop
 got
@@ -346,15 +506,68 @@ got
     media-center
   ^6.1.1
     pw3
+  ^6.2.0
+    curl-to-node
+    media-center
+  ^6.3.0
+    electron-save-file
+    vk-google-music-export-cli
+gulp
+  ^3.9.1
+    hain-travis-publish-playground
+gulp-babel
+  ^6.1.2
+    hain-travis-publish-playground
+gulp-install
+  ^0.6.0
+    hain-travis-publish-playground
+gulp-replace
+  ^0.5.4
+    hain-travis-publish-playground
+gulp-shell
+  ^0.5.2
+    hain-travis-publish-playground
+gulp-sourcemaps
+  ^1.6.0
+    hain-travis-publish-playground
+gulp-util
+  ^3.0.7
+    hain-travis-publish-playground
+gulp-zip
+  ^3.2.0
+    hain-travis-publish-playground
 hasha
   ^2.2.0
     cached-npm-install
+    knowledge-extractor-cli
+    trakt-cli
+html-parse-stringify
+  ^1.0.2
+    html-preview
+html-preview
+  ^1.0.0
+    the-feed
 html-webpack-plugin
   ^1.6.0
     webpackman
 husky
   ^0.11.3
+    anki-apkg-export
+    anki-apkg-export-app
+    anki-apkg-export-cli
     cached-npm-repo
+    curl-to-node
+    electron-image-menu
+    electron-save-file
+    hain-plugin-chrome-bookmarks
+    html-preview
+    knowledge-extractor-cli
+    media-center
+    opensubtitles-universal-api
+    the-feed
+    trakt-cli
+    vk-auth-prompt
+    vk-google-music-export-cli
 id3js
   ^1.1.3
     badtaste
@@ -395,6 +608,8 @@ inquirer-menu
     badtaste
   0.2.0
     workout-cli
+  ^1.0.0
+    xavier-browsers
 inquirer-question
   ^1.1.0
     workout-cli
@@ -404,6 +619,8 @@ inquirer-question
     the-feed
   ^1.2.0
     inquirer-menu
+  ^1.2.1
+    vk-auth-prompt
 inquirer-test
   ^1.0.0
     inquirer-bluebird
@@ -413,6 +630,7 @@ inquirer-test
     inquirer-question
   ^1.0.5
     inquirer-menu
+    vk-auth-prompt
 intel
   ^1.0.2
     badtaste
@@ -429,6 +647,12 @@ istanbul
 jade
   ^1.10.0
     xavier
+jasmine-core
+  ^2.4.1
+    opensubtitles-universal-api
+jest-cli
+  ^0.10.0
+    hain-travis-publish-playground
 jquery
   ^2.1.4
     xavier
@@ -436,9 +660,20 @@ jquery
 js-yaml
   ^3.4.6
     the-feed
+jsdom
+  ^8.2.0
+    anki-apkg-export-app
+json-loader
+  ^0.5.4
+    record-desktop
+jszip
+  ^2.6.0
+    anki-apkg-export
 karma
   ^0.13.19
     universal-api-test
+  ^0.13.22
+    opensubtitles-universal-api
 karma-chrome-launcher
   ^0.2.2
     universal-api-test
@@ -448,11 +683,15 @@ karma-env-preprocessor
 karma-firefox-launcher
   ^0.1.7
     universal-api-test
+karma-jasmine
+  ^0.3.6
+    opensubtitles-universal-api
 karma-mocha
   ^0.2.1
     universal-api-test
 karma-phantomjs-launcher
   ^1.0.0
+    opensubtitles-universal-api
     universal-api-test
 karma-safari-launcher
   ^0.1.1
@@ -461,8 +700,12 @@ karma-sauce-launcher
   ^0.3.0
     universal-api-test
     universal-api-test
+karma-spec-reporter
+  0.0.24
+    opensubtitles-universal-api
 karma-webpack
   ^1.7.0
+    opensubtitles-universal-api
     universal-api-test
 kexec
   ^1.2.0
@@ -486,6 +729,8 @@ lodash
     watchtower-cli
   ^4.5.0
     record-desktop
+  ^4.6.1
+    knowledge-extractor-cli
 meow
   ^3.3.0
     pw3
@@ -494,15 +739,19 @@ meow
     badtaste
     media-center
   ^3.7.0
+    anki-apkg-export-cli
     dictionary-cli
+    knowledge-extractor-cli
     the-feed
     trakt-cli
+    vk-google-music-export-cli
 minimist
   ^1.1.1
     telegram-bot-cli
   ^1.1.3
     watchtower-cli
   ^1.2.0
+    curl-to-node
     webpackman
 mkdirp
   ^0.5.1
@@ -580,6 +829,9 @@ nodemon
     split-torrent-release
     trakt-cli
     trakt-utils
+npm-check
+  ^5.2.1
+    generator-ewnd9-npm
 npm-run-all
   ^1.3.4
     the-feed
@@ -611,18 +863,27 @@ opener
 opn
   ^3.0.2
     watchtower-cli
+ora
+  ^0.2.1
+    trakt-cli
 phantomjs-prebuilt
   ^2.1.3
     universal-api-test
+  ^2.1.7
+    opensubtitles-universal-api
 pify
   ^2.3.0
+    opensubtitles-universal-api
     record-desktop
+    vk-auth-prompt
 pinkie
   ^2.0.4
     inquirer-menu
 pinkie-promise
   ^2.0.0
     inquirer-test
+  ^2.0.1
+    vk-auth-prompt
 player
   ^0.6.1
     badtaste
@@ -676,6 +937,7 @@ proxyquire
     cached-npm-repo
 raw-loader
   ^0.5.1
+    anki-apkg-export-app
     webpackman
 react
   ^0.14.3
@@ -685,7 +947,11 @@ react
   ^0.14.6
     record-desktop
   ^0.14.7
+    anki-apkg-export-app
     tracklister-app
+react-autosuggest
+  ^3.7.3
+    media-center
 react-cl-audio-player
   ^1.0.0
     tracklister-app
@@ -700,6 +966,7 @@ react-dom
   ^0.14.6
     record-desktop
   ^0.14.7
+    anki-apkg-export-app
     tracklister-app
 react-hot-loader
   ^1.3.0
@@ -716,6 +983,7 @@ react-redux
 react-router
   ^2.0.0
     record-desktop
+  ^2.3.0
     the-feed
 react-select
   ^1.0.0-beta8
@@ -728,6 +996,12 @@ react-swipeable
     the-feed
 react-tooltip
   ^1.0.3
+    the-feed
+read-chunk
+  ^1.0.1
+    electron-save-file
+redial
+  ^0.4.1
     the-feed
 redux
   ^3.0.5
@@ -749,13 +1023,22 @@ sanitize-html
     the-feed
 script-loader
   ^0.6.1
+    anki-apkg-export-app
     media-center
     webpackman
+sha1
+  ^1.1.1
+    anki-apkg-export
+shell-quote
+  ^1.5.0
+    curl-to-node
 show-episode-format
   ^1.0.1
     trakt-cli
   ^1.0.2
     pw3
+  ^1.0.3
+    media-center
 sinon
   ^1.17.2
     media-center
@@ -764,6 +1047,8 @@ socket.io
     xavier
   ^1.4.2
     media-center
+  ^1.4.5
+    xavier-browsers
 socket.io-client
   ^1.3.5
     xavier-browsers
@@ -787,6 +1072,9 @@ split-tracklist
   ^1.1.1
     badtaste
     tracklister-app
+sql.js
+  ^0.3.2
+    anki-apkg-export
 style-loader
   ^0.12.3
     webpackman
@@ -795,6 +1083,8 @@ style-loader
 superagent
   ^1.4.0
     universal-api
+  ^1.8.3
+    opensubtitles-universal-api
 superagent-jsonp
   0.0.5
     universal-api
@@ -807,6 +1097,9 @@ table
 telegram-bot-api
   ^0.3.0
     telegram-bot-cli
+through2
+  ^2.0.1
+    electron-save-file
 trakt-utils
   ^0.3.0
     media-center
@@ -825,8 +1118,11 @@ update-notifier
   ^0.5.0
     badtaste
   ^0.6.0
+    anki-apkg-export-cli
     dictionary-cli
+    knowledge-extractor-cli
     trakt-cli
+    vk-google-music-export-cli
 url-loader
   ^0.5.6
     webpackman
@@ -841,10 +1137,21 @@ user-home
     inquirer-credentials
     media-center
     the-feed
+userhome
+  ^1.0.0
+    vk-auth-prompt
+vk-auth-prompt
+  ^1.0.0
+    vk-google-music-export-cli
 vk-universal-api
   0.0.2
     badtaste
     the-feed
+  ^0.2.0
+    vk-google-music-export-cli
+vlc
+  github:fenwick67/node-vlc
+    media-center
 webpack
   ^1.9.10
     xavier-browsers
@@ -854,18 +1161,28 @@ webpack
     universal-api-test
   ^1.12.13
     webpackman
+  ^1.13.0
+    opensubtitles-universal-api
 webpack-dev-server
   ^1.14.1
     record-desktop
     webpackman
+webpack-hot-middleware
+  ^2.10.0
+    the-feed
+webpack-node-externals
+  ^1.2.0
+    the-feed
 webpack-target-electron-renderer
   ^0.4.0
     record-desktop
 webpackman
   ^0.1.0
-    media-center
     tracklister-app
-  ^0.3.2
+  ^0.5.0
+    anki-apkg-export-app
+    anki-apkg-export-app
+    media-center
     the-feed
 whereis
   ^0.4.0
@@ -881,6 +1198,12 @@ x11
     media-center
   ^2.0.5
     record-desktop
+xmlrpc
+  ^1.3.1
+    opensubtitles-universal-api
+xmlrpc-lite
+  0.0.4
+    opensubtitles-universal-api
 yeoman-generator
   ^0.19.0
     generator-ewnd9-eslint
