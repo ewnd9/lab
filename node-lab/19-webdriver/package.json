@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "selenium-standalone": "^5.1.0",
+    "webdrivercss": "^2.0.0-beta-rc1",
+    "webdriverio": "^3.4.0"
+  }
+}
