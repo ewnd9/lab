@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "dependencies": {
+    "duplexer2": "^0.1.4",
+    "split": "^1.0.0",
+    "stream-adventure": "^4.0.5",
+    "stream-combiner": "^0.2.2",
+    "through2": "^2.0.1"
+  }
+}

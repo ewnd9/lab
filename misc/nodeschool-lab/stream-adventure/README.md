@@ -1,1 +1,0 @@
-- [ ] Duplexer is [broken](https://github.com/substack/stream-adventure/issues/155)
