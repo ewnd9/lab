@@ -8,6 +8,7 @@
     "gh-got": "^2.4.0",
     "got": "^6.2.0",
     "mkdirp": "^0.5.1",
+    "npm-user-packages": "^1.0.0",
     "pify": "^2.3.0",
     "semver-sort": "0.0.3"
   }

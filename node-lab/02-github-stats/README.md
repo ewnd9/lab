@@ -1,4 +1,6 @@
-:warning: Forked repositories are not processed by now 
+# self-reflection-cli
+
+:warning: Forked repositories are not processed by now
 
 ## Usage
 
@@ -13,3 +15,7 @@ $ npm run create-deps-report
 ```
 $ npm run create-catalog
 ```
+
+## Related
+
+https://github.com/juliangruber/review
