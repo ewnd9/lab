@@ -5,21 +5,17 @@
 - record: use recorded nocks, record new nocks
 - lockdown: use recorded nocks, disables all http calls even when not nocked, doesn't record
 
-## Versions
-
-### `got` version
-
-code with enabled `nock` throws exception due to some problems with gzip processing
- https://github.com/pgte/nock/issues/486
-
 ```
-ReadError: incorrect header check
-     at node_modules/got/index.js:98:26
-```   
+$ rm test/fixtures/spec.js.json && npm test
 
-### `superagent` version
+superagent: 1016.991ms
+got: 1015.794ms
 
-ok
+$ npm test
+
+superagent: 25.259ms
+got: 17.903ms
+```
 
 ## References
 

@@ -13,18 +13,18 @@ test.after(nock.afterFn);
 const url = 'https://api.github.com/users/ewnd9';
 
 test(async t => {
-  console.time('test');
+  console.time('superagent');
 
   await request.get(url)
     .then(function(res) {
       console.log(res.body.login);
     });
 
-  console.timeEnd('test');
+  console.timeEnd('superagent');
 });
 
-test.skip(async t => {
-  console.time('test');
+test(async t => {
+  console.time('got');
 
   await got(url, {
     json: true,
@@ -35,5 +35,5 @@ test.skip(async t => {
     console.log(res.body.login);
   });
 
-  console.timeEnd('test');
+  console.timeEnd('got');
 });

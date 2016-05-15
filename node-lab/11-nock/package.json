@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "got": "^6.2.0",
-    "nock": "^3.6.0",
+    "nock": "^7.5.0",
     "request": "^2.69.0",
     "superagent": "^1.8.0",
     "superagent-as-promised": "^3.2.1",
