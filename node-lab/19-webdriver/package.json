@@ -4,5 +4,9 @@
     "selenium-standalone": "^5.1.0",
     "webdrivercss": "^2.0.0-beta-rc1",
     "webdriverio": "^3.4.0"
+  },
+  "devDependencies": {
+    "ecstatic": "^1.4.1",
+    "npm-run-all": "^2.1.0"
   }
 }
