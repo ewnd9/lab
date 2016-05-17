@@ -1,16 +1,13 @@
 # lab
 
-Contains top level dependencies
+Experiments :santa: :santa: :santa:
 
-- `babel-core`
-- `babel-cli`
-- `babel-preset-es2015`
-- `babel-preset-stage-0`
+## Looking for deleted code
 
-## Install
-
-```
-$ npm install
+```sh
+$ git bisect run HEAD HEAD~20 --
+$ git bisect run find . -type d -name '*<dirirectory>*' | egrep '.*'
+$ git bisect reset
 ```
 
 ## License
