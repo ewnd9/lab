@@ -5,7 +5,6 @@
     <meta name='referrer' content='always'>
     <meta name='twitter:widgets:csp' content='on'>
     <title>Enforcing a Performance Budget</title>
-    <script src='//code.jquery.com/jquery-1.11.3.min.js'></script>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css'>
     <link rel='stylesheet' href='/index.css'>
@@ -13,14 +12,14 @@
   <body>
     <article>
       <h1>These are kittens.</h1>
-      <img class='cat' src='http://i.imgur.com/szp6mtc.jpg' />
-      <img class='cat' src='http://i.imgur.com/LDi7dQc.jpg' />
-      <img class='cat' src='http://i.imgur.com/QTWNuxD.jpg' />
-      <img class='cat' src='http://i.imgur.com/blSnwaJ.jpg' />
-      <img class='cat' src='http://i.imgur.com/Kd4vU6t.jpg' />
-      <img class='cat' src='http://i.imgur.com/GM8I8CN.jpg' />
-      <img class='cat' src='http://i.imgur.com/976ITaH.jpg' />
-      <img class='cat' src='http://i.imgur.com/47ePYw8.gif' />
+      <img class='cat' data-src='http://i.imgur.com/szp6mtc.jpg' />
+      <img class='cat' data-src='http://i.imgur.com/LDi7dQc.jpg' />
+      <img class='cat' data-src='http://i.imgur.com/QTWNuxD.jpg' />
+      <img class='cat' data-src='http://i.imgur.com/blSnwaJ.jpg' />
+      <img class='cat' data-src='http://i.imgur.com/Kd4vU6t.jpg' />
+      <img class='cat' data-src='http://i.imgur.com/GM8I8CN.jpg' />
+      <img class='cat' data-src='http://i.imgur.com/976ITaH.jpg' />
+      <img class='cat' data-src='http://i.imgur.com/47ePYw8.gif' />
     </article>
     <div>
       <h1>Here's a fantastic tweet I wrote.</h1>
@@ -41,5 +40,13 @@
       <h1>Learn more about the awesome code I write, at: <a href='http://ponyfoo.com'>Pony Foo</a>.</h1>
       <code>/sarcasm</code>
     </article>
+    <script>
+    Array.forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+      img.setAttribute('src', img.getAttribute('data-src'));
+      img.onload = function() {
+        img.removeAttribute('data-src');
+      };
+    });
+    </script>
   </body>
 </html>
