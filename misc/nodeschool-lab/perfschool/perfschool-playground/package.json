@@ -49,7 +49,8 @@
     "localtunnel": "^1.8.1",
     "pify": "^2.3.0",
     "psi": "^2.0.4",
-    "serve-static": "1.9.2"
+    "serve-static": "1.9.2",
+    "webpagetest": "^0.3.4"
   },
   "description": "Find your way through the performance optimization maze in this NodeSchool workshopper",
   "directories": {},
