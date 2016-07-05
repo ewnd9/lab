@@ -1,0 +1,6 @@
+{
+  "name": "lab-perfschool",
+  "dependencies": {
+    "perfschool": "^1.0.3"
+  }
+}
