@@ -1,7 +1,7 @@
 <html>
   <head>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Creating Spritesheets!</title>
     <style>
       body {
@@ -21,20 +21,32 @@
         border-radius: 200px;
         display: inline-block;
       }
-    </style>
+    
+span {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 25px #fff;
+  border: 2px solid #fff;
+  border-radius: 200px;
+  display: inline-block;
+}
+span:before {
+  display: block;
+  content: '';
+}
+</style>
   </head>
   <body>
     <h1>Creating <em>Spritesheets</em>!</h1>
     <h3>Here are some icons!</h3>
     <p>
-      <img src='/icons/github.png' alt='' />
-      <img src='/icons/slack.png' alt='' />
-      <img src='/icons/chrome.png' alt='' />
-      <img src='/icons/safari.png' alt='' />
-      <img src='/icons/ie.png' alt='' />
-      <img src='/icons/ff.png' alt='' />
-      <img src='/icons/mongodb.png' alt='' />
-      <img src='/icons/rockmelt.png' alt='' />
+      <span class="ic-github"></span>
+      <span class="ic-slack"></span>
+      <span class="ic-chrome"></span>
+      <span class="ic-safari"></span>
+      <span class="ic-ie"></span>
+      <span class="ic-ff"></span>
+      <span class="ic-mongodb"></span>
+      <span class="ic-rockmelt"></span>
     </p>
-  </body>
+  <link rel="stylesheet" href="icons.css"></body>
 </html>

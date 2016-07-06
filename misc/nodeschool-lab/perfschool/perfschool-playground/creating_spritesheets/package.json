@@ -11,5 +11,11 @@
   "bugs": {
     "url": "https://github.com/bevacqua/perfschool/issues"
   },
-  "homepage": "https://github.com/bevacqua/perfschool"
+  "homepage": "https://github.com/bevacqua/perfschool",
+  "devDependencies": {
+    "spritesmith-cli": "^1.1.2"
+  },
+  "scripts": {
+    "build": "spritesmith && node build"
+  }
 }
