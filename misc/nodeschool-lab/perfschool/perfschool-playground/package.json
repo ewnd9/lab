@@ -45,6 +45,7 @@
     "url": "https://github.com/bevacqua/perfschool/issues"
   },
   "dependencies": {
+    "datauri": "^1.0.4",
     "express": "4.12.3",
     "localtunnel": "^1.8.1",
     "pify": "^2.3.0",
