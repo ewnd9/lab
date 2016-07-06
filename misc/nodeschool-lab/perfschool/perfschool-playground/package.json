@@ -50,6 +50,8 @@
     "pify": "^2.3.0",
     "psi": "^2.0.4",
     "serve-static": "1.9.2",
+    "trumpet": "^1.7.2",
+    "uncss": "^0.13.0",
     "webpagetest": "^0.3.4"
   },
   "description": "Find your way through the performance optimization maze in this NodeSchool workshopper",
