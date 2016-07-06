@@ -1,6 +1,7 @@
 {
   "name": "lab-perfschool",
   "dependencies": {
+    "jquery": "^3.0.0",
     "perfschool": "^1.0.3"
   }
 }

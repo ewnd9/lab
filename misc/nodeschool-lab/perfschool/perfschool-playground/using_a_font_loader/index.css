@@ -1,16 +1,18 @@
 body {
-  background-color: #f00;
+  background-color: #ffc;
+  color: #333;
   padding: 20px;
+  font-family: sans-serif;
 }
-.lato {
+.ok-lato .lato {
   font-family: 'Lato', sans-serif;
 }
-.cardo {
+.ok-cardo .cardo {
   font-family: 'Cardo', sans-serif;
 }
-.roboto {
+.ok-roboto .roboto {
   font-family: 'Roboto', sans-serif;
 }
-.merriweather {
+.ok-merriweather .merriweather {
   font-family: 'Merriweather', sans-serif;
 }

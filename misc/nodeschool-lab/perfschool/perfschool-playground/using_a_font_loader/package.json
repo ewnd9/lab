@@ -2,6 +2,20 @@
   "name": "perfschool",
   "version": "1.0.0",
   "description": "Find your way through the performance optimization maze in this NodeSchool workshopper",
+  "scripts": {
+    "build": "browserify main.js -o index.js"
+  },
+  "browser": {
+    "fontfaceonload": "./node_modules/fontfaceonload/dist/fontfaceonload.js"
+  },
+  "browserify-shim": {
+    "fontfaceonload": "FontFaceOnload"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bevacqua/perfschool.git"
@@ -11,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/bevacqua/perfschool/issues"
   },
-  "homepage": "https://github.com/bevacqua/perfschool"
+  "homepage": "https://github.com/bevacqua/perfschool",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "fontfaceonload": "^0.1.7"
+  }
 }

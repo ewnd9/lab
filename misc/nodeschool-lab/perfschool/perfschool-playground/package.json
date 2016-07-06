@@ -45,8 +45,11 @@
     "url": "https://github.com/bevacqua/perfschool/issues"
   },
   "dependencies": {
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
     "datauri": "^1.0.4",
     "express": "4.12.3",
+    "fontfaceonload": "^0.1.7",
     "gifsicle": "^3.0.3",
     "gm": "^1.22.0",
     "got": "^6.3.0",
