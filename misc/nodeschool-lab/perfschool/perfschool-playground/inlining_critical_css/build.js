@@ -28,10 +28,33 @@ function listening () {
       var html = fs.readFileSync('./index.html', 'utf-8');
       var $ = cheerio.load(html);
       var $head = $('head');
+      var $body = $('body');
 
-      var links = $('head').find('link').get();
+      var link = $head.find('link').get(0);
       $head.find('link').remove();
-      $('body').append(links);
+
+      $body.append(`
+        <noscript>
+          <link rel='stylesheet' type='text/css' href='${link.attribs.href}'>
+        </noscript>
+        <script>
+        (function () {
+          function loadStyle (url) {
+            var head = document.getElementsByTagName('head')[0];
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.media = 'only x';
+            link.href = url;
+            head.appendChild(link);
+            setTimeout(function () {
+              link.media = 'all';
+            }, 0);
+          }
+
+          loadStyle('${link.attribs.href}');
+        })();
+        </script>
+      `);
 
       $head.append($(`<style>${css}</style>`));
       fs.writeFileSync('./dist/index.html', $.html(), 'utf-8');
