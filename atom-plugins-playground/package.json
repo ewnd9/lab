@@ -1,0 +1,19 @@
+{
+  "name": "atom-plugins-playground",
+  "private": true,
+  "author": "ewnd9 <ewndnine@gmail.com>",
+  "license": "MIT",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Tests",
+  "repository": "https://github.com/ewnd9/lab",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "atom --test --timeout 60 ./spec/*.js"
+  },
+  "engines": {
+    "atom": ">0.194.0"
+  }
+}
