@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "dependency-check": "^2.5.1",
+    "inquirer": "^1.0.2"
+  }
+}
