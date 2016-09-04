@@ -4,6 +4,7 @@
 
 function activate() {
   const libs = [
+    require('./libs/declare-constant'),
     require('./libs/insert-previous-directory')
   ];
 
