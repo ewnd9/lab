@@ -4,7 +4,7 @@
 
 function activate() {
   const libs = [
-    require('./libs/copy-previous-directory') // why not exported as default?
+    require('./libs/insert-previous-directory')
   ];
 
   libs.forEach(lib => lib());
