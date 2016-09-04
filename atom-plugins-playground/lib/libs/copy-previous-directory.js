@@ -4,7 +4,7 @@
 
 export default () => {
   atom.commands.add('atom-workspace', {
-    'markdown-preview:toggle': () => {
+    'insert-previous-directory:toggle': () => {
       const modalPanels = atom.workspace.getModalPanels();
       if (modalPanels.length === 0) {
         return;
@@ -43,7 +43,28 @@ export default () => {
       }
 
       const prevDirectory = text.substring((begin && begin + 1) || 0, end);
-      atom.clipboard.write(prevDirectory);
+
+      let startErase;
+      let endErase;
+
+      if (editor.selections && editor.selections[0]) {
+        const range = editor.selections[0].getBufferRange();
+        startErase = range.start.column;
+        endErase = range.end.column;
+      } else {
+        startErase = editor.cursors[0].getBufferColumn();
+        endErase = startErase;
+      }
+
+      const nextText =
+        text.slice(0, startErase) +
+        prevDirectory +
+        text.slice(endErase);
+      const nextBufferPosition = startErase + prevDirectory.length;
+
+      // atom.clipboard.write(prevDirectory);
+      editor.setText(nextText);
+      editor.cursors[0].setBufferPosition([0, nextBufferPosition]);
     }
   });
 };
