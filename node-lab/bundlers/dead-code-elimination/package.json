@@ -2,11 +2,14 @@
   "private": true,
   "scripts": {
     "build:browserify": "NODE_ENV=production browserify src/index.js -g [ envify purge --NODE_ENV production ] -t uglifyify -o dist/bundle.browserify.js",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.js"
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.js",
+    "build:rollup": "NODE_ENV=production rollup -c"
   },
   "devDependencies": {
     "browserify": "^13.1.0",
     "envify": "^3.4.1",
+    "rollup-plugin-commonjs": "^4.1.0",
+    "rollup-plugin-replace": "^1.1.1",
     "uglifyify": "^3.0.3",
     "webpack": "^1.13.2"
   }
