@@ -11,11 +11,13 @@ const defaultTransforms = [
 ];
 
 const commonjsToImport = 'commonjs-to-import.js';
+const importToCommonjs = 'import-to-commonjs.js';
 
 export default () => {
   atom.commands.add('atom-workspace', {
     'jscodeshift:defaut': () => run(defaultTransforms),
-    'jscodeshift:import': () => run([commonjsToImport])
+    'jscodeshift:import': () => run([commonjsToImport]),
+    'jscodeshift:commonjs': () => run([importToCommonjs])
   });
 };
 
