@@ -5,19 +5,21 @@
 import { spawn } from 'child_process';
 
 const defaultTransforms = [
-  'no-vars.js',
-  'template-literals.js',
-  'unchain-variables.js'
+  'js-codemod-cpojer/transforms/no-vars.js',
+  'js-codemod-cpojer/transforms/template-literals.js',
+  'js-codemod-cpojer/transforms/unchain-variables.js'
 ];
 
-const commonjsToImport = 'commonjs-to-import.js';
-const importToCommonjs = 'import-to-commonjs.js';
+const commonjsToImport = '5to6-codemod/transforms/cjs.js';
+const importToCommonjs = 'js-codemod-ewnd9/transforms/import-to-commonjs.js';
+const redux = 'js-codemod-ewnd9/transforms/redux-replace-switch.js';
 
 export default () => {
   atom.commands.add('atom-workspace', {
     'jscodeshift:defaut': () => run(defaultTransforms),
     'jscodeshift:import': () => run([commonjsToImport]),
-    'jscodeshift:commonjs': () => run([importToCommonjs])
+    'jscodeshift:commonjs': () => run([importToCommonjs]),
+    'jscodeshift:redux-replace-switch': () => run([redux])
   });
 };
 
@@ -30,7 +32,7 @@ function run(transforms) {
     .map(t => {
       const args = [
         '-t',
-        `${process.env.HOME}/dotfiles/scripts/js-codemod/transforms/${t}`,
+        `${process.env.HOME}/dotfiles/scripts/codemod/${t}`,
         file
       ];
 
