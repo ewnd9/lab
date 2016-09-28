@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build:browserify": "NODE_ENV=production browserify src/index.js -g [ envify purge --NODE_ENV production ] -t uglifyify -o dist/bundle.browserify.js",
+    "build:browserify:exclude": "NODE_ENV=production browserify src/index.js -g [ envify purge --NODE_ENV production ] -t uglifyify --exclude 'src/b.js' -o dist/bundle.browserify.exclude.js",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.js",
     "build:rollup": "NODE_ENV=production rollup -c"
   },

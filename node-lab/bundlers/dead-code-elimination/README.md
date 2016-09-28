@@ -30,6 +30,23 @@ $ grep "dependency-b" dist/bundle.browserify.js
 "use strict";module.exports="dependency-b"; # shouldn't be founded
 ```
 
+`browserify` has the `--exclude 'path/from/root/of/project'` option
+
+```sh
+$ npm run build:browserify:exclude
+
+$ grep "dependency-a" dist/bundle.browserify.exclude.js
+
+"use strict";module.exports="dependency-a";
+
+$ grep "dependency-b" dist/bundle.browserify.exclude.js
+$ echo $? #=> 1, not found, this is expected behavior
+```
+
+You could manually exclude certain dependencies if you now you have guareded them with
+`if (process.env.NODE_ENV !== 'production')`, but tracking this kind of behaviour in
+dependencies themself seems unpractical.
+
 ## webpack
 
 ```sh
