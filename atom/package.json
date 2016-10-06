@@ -15,5 +15,9 @@
   },
   "engines": {
     "atom": ">0.194.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "pkg-up": "^1.0.0"
   }
 }
