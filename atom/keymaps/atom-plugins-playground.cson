@@ -1,2 +1,4 @@
 'atom-workspace, atom-workspace atom-text-editor':
   'ctrl-:': 'markdown-preview:toggle'
+  'ctrl-H': 'jscodeshift:import'
+  'ctrl-J': 'jscodeshift:commonjs'

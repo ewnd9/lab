@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
+    "jscodeshift": "^0.3.29",
     "pkg-up": "^1.0.0"
   }
 }
