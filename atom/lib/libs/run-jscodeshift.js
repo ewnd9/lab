@@ -29,7 +29,10 @@ function run(transforms) {
   const editor = pane.getActiveEditor();
 
   if (!cache[transforms]) {
-    cache[transforms] = transforms.map(t => require(`${process.env.HOME}/dotfiles/scripts/codemod/${t}`));
+    cache[transforms] = transforms.map(t => ({
+      name: t,
+      fn: require(`${process.env.HOME}/dotfiles/scripts/codemod/${t}`)
+    }));
   }
 
   if (!jscodeshift) {
@@ -48,9 +51,15 @@ function run(transforms) {
   const result = cache[transforms].reduce(
     (source, transform) => {
       try {
-        return transform({ source }, { jscodeshift }, {});
+        const result = transform.fn({ source }, { jscodeshift }, {});
+
+        if (!result) {
+          throw new Error('empty result');
+        }
+
+        return result;
       } catch (e) {
-        console.log(e)
+        console.error(transform.name, e);
         return source;
       }
     },
