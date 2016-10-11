@@ -7,6 +7,7 @@ function activate() {
     require('./libs/declare-constant'),
     require('./libs/insert-previous-directory'),
     require('./libs/run-jscodeshift'),
+    // require('./libs/ast-refactor/'), @TODO
     require('./libs/node-modules-dialog/')
   ];
 
