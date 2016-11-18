@@ -18,7 +18,9 @@
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
+    "globby": "^6.1.0",
     "jscodeshift": "^0.3.29",
+    "lodash.orderby": "^4.6.0",
     "pkg-up": "^1.0.0"
   }
 }
