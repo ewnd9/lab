@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "dependencies": {
+    "noop3": "^13.8.1"
+  }
+}
