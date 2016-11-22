@@ -2,7 +2,7 @@
 
 'use strict';
 
-const db1 = require('noop3');
+const db = require('noop3');
 const s: string = '1';
 
 type User = {
