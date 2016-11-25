@@ -9,7 +9,8 @@ function activate() {
     require('./libs/run-jscodeshift'),
     require('./libs/open-oldest-file'),
     // require('./libs/ast-refactor/'), @TODO
-    require('./libs/node-modules-dialog/')
+    require('./libs/node-modules-dialog/'),
+    require('./libs/snippets-list/')
   ];
 
   libs.forEach(lib => lib());
