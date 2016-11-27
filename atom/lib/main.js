@@ -10,6 +10,7 @@ function activate() {
     require('./libs/open-oldest-file'),
     // require('./libs/ast-refactor/'), @TODO
     require('./libs/node-modules-dialog/'),
+    require('./libs/refactor-md/'),
     require('./libs/snippets-list/')
   ];
 
