@@ -21,6 +21,10 @@ $ node index.js
 $ ava --watch
 ```
 
+## `java`/`android` client
+
+See /android/app/src/test/java/com/ewnd9/lab/SelfSignedHttpsUnitTest.java
+
 ## Source
 
 - [HTTPS Authorized Certs with Node.js](https://engineering.circle.com/https-authorized-certs-with-node-js-315e548354a2#.q1nk6wiwv)
