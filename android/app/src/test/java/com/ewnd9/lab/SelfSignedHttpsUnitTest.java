@@ -44,28 +44,11 @@ public class SelfSignedHttpsUnitTest {
             assertEquals(e.getClass().getCanonicalName(), "javax.net.ssl.SSLHandshakeException");
         }
 
-        Certificate caCert = getCert(System.getenv("HOME") + "/lab/node/server/server-self-signed/cert/ca-crt.pem");
-        Certificate clientCert = getCert(System.getenv("HOME") + "/lab/node/server/server-self-signed/cert/client1-crt.pem");
-        PrivateKey clientKey = getKey(System.getenv("HOME") + "/lab/node/server/server-self-signed/cert/client1-key.pem");
-
-        KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
-        trustStore.load(null, null);
-        trustStore.setEntry("ca", new KeyStore.TrustedCertificateEntry(caCert), null);
-
-        KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
-        keyStore.load(null, null);
-        keyStore.setCertificateEntry("client", clientCert);
-        keyStore.setKeyEntry("key", clientKey, new char[0], new Certificate[] { clientCert });
-
-        KeyManagerFactory keyManagerFactory = KeyManagerFactory.getInstance(
-                KeyManagerFactory.getDefaultAlgorithm());
-        keyManagerFactory.init(keyStore, new char[0]);
-
-        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
-        trustManagerFactory.init(trustStore);
-
-        SSLContext context = SSLContext.getInstance("TLSv1.2");
-        context.init(keyManagerFactory.getKeyManagers(), trustManagerFactory.getTrustManagers(), null);
+        SSLContext context = ServerHelpers.getContext(
+            System.getenv("HOME") + "/lab/node/server/server-self-signed/cert/ca-crt.pem",
+            System.getenv("HOME") + "/lab/node/server/server-self-signed/cert/client1-crt.pem",
+            System.getenv("HOME") + "/lab/node/server/server-self-signed/cert/client1-key.pem"
+        );
 
         HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
         urlConnection.setSSLSocketFactory(context.getSocketFactory());
@@ -74,45 +57,11 @@ public class SelfSignedHttpsUnitTest {
 
         try {
             InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-            body = readStream(in);
+            body = ServerHelpers.readStream(in);
         } finally {
             urlConnection.disconnect();
         }
 
         assertEquals(body, "{\"url\":\"/\"}");
-    }
-
-    PrivateKey getKey(String path) throws Exception {
-        BufferedReader r = new BufferedReader(new InputStreamReader(new FileInputStream(path)));
-        PEMKeyPair clientKeyPair = (PEMKeyPair) new PEMParser(r).readObject();
-        PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(clientKeyPair.getPrivateKeyInfo().getEncoded());
-
-        KeyFactory kf = KeyFactory.getInstance("RSA");
-        PrivateKey clientKey = kf.generatePrivate(spec);
-
-        return clientKey;
-    }
-
-    Certificate getCert(String path) throws Exception {
-        CertificateFactory cf = CertificateFactory.getInstance("X.509");
-
-        InputStream caInput = new BufferedInputStream(new FileInputStream(path));
-        Certificate ca = cf.generateCertificate(caInput);
-        caInput.close();
-
-        return ca;
-    }
-
-    String readStream(InputStream in) throws Exception {
-        StringBuilder sb = new StringBuilder();
-        BufferedReader br = new BufferedReader(new InputStreamReader(in));
-        String read;
-
-        while((read = br.readLine()) != null) {
-            sb.append(read);
-        }
-
-        br.close();
-        return sb.toString();
     }
 }

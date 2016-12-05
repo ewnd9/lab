@@ -21,9 +21,19 @@ $ node index.js
 $ ava --watch
 ```
 
-## `java`/`android` client
+## `java`/`android`
+
+### Client
 
 See /android/app/src/test/java/com/ewnd9/lab/SelfSignedHttpsUnitTest.java
+
+### Server
+
+See /android/app/src/test/java/com/ewnd9/lab/SelfSignedHttpsServerUnitTest.java
+
+```sh
+$ ava java-server-test.js
+```
 
 ## Source
 
