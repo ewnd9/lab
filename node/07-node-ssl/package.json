@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^4.14.0",
+    "get-stream": "^3.0.0",
+    "got": "^6.6.3"
+  }
+}
