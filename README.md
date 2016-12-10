@@ -2,13 +2,17 @@
 
 Experiments :santa: :santa: :santa:
 
-## Looking for deleted code
+## Related
 
-```sh
-$ git bisect run HEAD HEAD~20 --
-$ git bisect run find . -type d -name '*<dirirectory>*' | egrep '.*'
-$ git bisect reset
-```
+A few others similar-approached repos
+
+- [bradyhouse/house](https://github.com/bradyhouse/house)
+- [shama/letswritecode](https://github.com/shama/letswritecode)
+- [erkobridee/lab-nodejs](https://github.com/erkobridee/lab-nodejs)
+- [vvscode/code-notes](https://github.com/vvscode/code-notes)
+- [yoshuawuyts/playgrounds](https://github.com/yoshuawuyts/playgrounds)
+- [VovanR/notes](https://github.com/VovanR/notes)
+- [huytd/til](https://github.com/huytd/til)
 
 ## License
 
