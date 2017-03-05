@@ -1,7 +1,6 @@
 'use strict';
 
-'use strict';
-
+// https://github.com/klamping/vrt-email-course/blob/master/manuscript/day-2.md
 const runner = require('./setup').runner;
 
 runner(browser => {

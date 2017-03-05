@@ -1,5 +1,6 @@
 'use strict';
 
+const runner = require('./setup').runner;
 
 const loginForm = {
   name: 'Login',
@@ -8,10 +9,7 @@ const loginForm = {
 
 const username = `${loginForm.elem} #login-email-field`;
 const password = `${loginForm.elem} #login-password-field_`;
-
 const error = '.error-message';
-
-const runner = require('./setup').runner;
 
 runner(browser => {
   return browser
