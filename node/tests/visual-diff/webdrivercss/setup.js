@@ -2,6 +2,7 @@
 
 const wdio = require('webdriverio');
 const webdrivercss = require('webdrivercss');
+const exitHook = require('exit-hook');
 const { SELENIUM } = process.env;
 
 const Xvfb = require('xvfb');
@@ -11,6 +12,18 @@ const xvfb = new Xvfb({
   xvfb_args: ['-screen', '0', '2880x1800x24']
 });
 xvfb.startSync();
+
+let proc;
+
+// process might be stoped with xvfb and child_process still opened hence exit hook
+// process cannot be stopped without closing server first hence it's at the end of file
+exitHook(() => {
+  xvfb.stopSync();
+
+  if (proc) {
+    proc.kill('SIGTERM');
+  }
+})
 
 const browser = wdio.remote({
   desiredCapabilities: {
@@ -37,13 +50,11 @@ function runner(job) {
 
   setTimeout(() => {
     job(browser)
+      .catch(err => console.log(err.stack || err))
       .then(() => {
-        console.log('killing process');
         server.close();
-        proc.kill('SIGTERM');
-        xvfb.stopSync();
-      })
-      .catch(err => console.log(err.stack || err));
+        process.exit(0);
+      });
   }, 1000);
 }
 
