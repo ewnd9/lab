@@ -1,0 +1,14 @@
+# https://github.com/tdlib/td/blob/master/.travis.yml
+sudo: required
+services:
+  - docker
+addons:
+  apt:
+    sources:  [ 'ubuntu-toolchain-r-test']
+    packages: [ 'gcc-5','g++-5', 'gperf']
+env:
+  - CXX=g++-5 CC=gcc-5
+language: node_js
+node_js:
+  - '8'
+script: bash install.sh
