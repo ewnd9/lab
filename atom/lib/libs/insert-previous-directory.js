@@ -11,20 +11,10 @@ export default () => {
       }
 
       const modalPanel = modalPanels.find(panel => {
-        return panel.item.classList && panel.item.classList[0] === 'tree-view-dialog';
+        return panel.item.element && panel.item.element.className === 'tree-view-dialog';
       });
 
-      const panelView = modalPanel.getItem();
-
-      let editor;
-
-      try {
-        editor = panelView.childNodes[1].getModel();
-      } catch (e) {
-        console.log('no model for ', panelView, modalPanels.length);
-        return null;
-      }
-
+      const editor = modalPanel.item.miniEditor;
       const text = editor.getText();
 
       let position = editor.cursors[0].getBufferColumn();
