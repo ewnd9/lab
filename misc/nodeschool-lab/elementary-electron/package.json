@@ -1,9 +1,0 @@
-{
-  "name": "lab-elementary-electron",
-  "dependencies": {
-    "cat-picture": "^5.1.2",
-    "electron-prebuilt": "^0.36.8",
-    "elementary-electron": "*",
-    "lightning-image-poly": "0.0.10"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "env" : {
-    "node" : true
-  },
-  "rules" : {
-    "strict" : 0
-  }
-}

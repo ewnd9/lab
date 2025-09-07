@@ -1,7 +1,0 @@
-/node_modules/
-/dist/*
-!/dist/offline.html
-!/dist/app.sw.js
-!/dist/upup.sw.min.js
-*.log
-play.js

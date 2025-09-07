@@ -1,1 +1,0 @@
-{"version":3,"sources":["../fixtures/code.js"],"names":[],"mappings":";;AAAA,IAAM,IAAI,SAAJ,CAAI;AAAA,SAAM,CAAN;AAAA,CAAV;;AAEA,SAAS,IAAT,GAAgB;AACd,QAAM,IAAI,KAAJ,CAAU,GAAV,CAAN;AACD;;AAED","file":"code.js","sourcesContent":["const a = () => 1;\n\nfunction test() {\n  throw new Error('1');\n}\n\ntest();\n"]}

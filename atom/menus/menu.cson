@@ -1,3 +1,0 @@
-'context-menu':
-  '.tree-view .directory.selected':
-    [{ label: 'Refactor MD', command:  'refactor-md:collapse' }]
