@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Instagram Saved Collections Schema",
+  "description": "Schema for Instagram saved collections data scraped by the CLI tool",
+  "items": {
+    "type": "object",
+    "title": "Instagram Collection",
+    "description": "A single Instagram saved collection with its posts",
+    "required": ["user", "name", "id", "url", "posts"],
+    "properties": {
+      "user": {
+        "type": "string",
+        "description": "Instagram username who owns the collection",
+        "pattern": "^[a-zA-Z0-9_.]+$",
+        "minLength": 1,
+        "maxLength": 30
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of the saved collection",
+        "minLength": 1,
+        "maxLength": 255
+      },
+      "id": {
+        "type": "string",
+        "description": "Unique Instagram collection ID",
+        "pattern": "^\\d+$",
+        "minLength": 1
+      },
+      "url": {
+        "type": "string",
+        "description": "Full URL to the Instagram saved collection",
+        "format": "uri",
+        "pattern": "^https://www\\.instagram\\.com/[^/]+/saved/[^/]+/\\d+/$"
+      },
+      "posts": {
+        "type": "array",
+        "description": "Array of Instagram posts in this collection",
+        "minItems": 0,
+        "items": {
+          "type": "object",
+          "title": "Instagram Post",
+          "description": "A single Instagram post within the collection",
+          "required": ["id", "url"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Instagram post ID (shortcode)",
+              "pattern": "^[A-Za-z0-9_-]+$",
+              "minLength": 1,
+              "maxLength": 50
+            },
+            "url": {
+              "type": "string",
+              "description": "Full URL to the Instagram post",
+              "format": "uri",
+              "pattern": "^https://www\\.instagram\\.com/p/[A-Za-z0-9_-]+/$"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "minItems": 0,
+  "examples": [
+    [
+      {
+        "user": "user",
+        "name": "collection",
+        "id": "123",
+        "url": "https://www.instagram.com/user/saved/collection/123/",
+        "posts": [
+          {
+            "id": "AAA",
+            "url": "https://www.instagram.com/p/AAA/"
+          },
+          {
+            "id": "BBB",
+            "url": "https://www.instagram.com/p/BBB/"
+          }
+        ]
+      }
+    ]
+  ]
+}
