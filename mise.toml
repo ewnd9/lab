@@ -1,0 +1,3 @@
+[tools]
+helm = "3.19.0"
+helmfile = "1.1.7"

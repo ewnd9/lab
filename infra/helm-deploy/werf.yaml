@@ -1,0 +1,5 @@
+configVersion: 1
+project: hello
+---
+image: hello
+dockerfile: ./app/Dockerfile
