@@ -1,0 +1,21 @@
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: {{ requiredEnv "IMAGE_REPOSITORY" }}
+          tag: {{ requiredEnv "IMAGE_TAG" }}
+          # https://iximiuz.com/en/posts/kubernetes-kind-load-docker-image/
+          pullPolicy: Never
+        probes:
+          startup:
+            enabled: false
+          liveness:
+            enabled: false
+          readiness:
+            enabled: false
+service:
+  main:
+    ports:
+      http:
+        port: &port 3000

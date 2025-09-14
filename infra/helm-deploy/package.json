@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "bun test --timeout 600000",
+    "test:watch": "bun test --timeout 600000 --watch"
+  },
+  "dependencies": {
+    "testcontainers": "^11.5.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.22"
+  }
+}

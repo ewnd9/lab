@@ -1,0 +1,18 @@
+project: helmwave-deploy-app
+version: "0.42.2"
+repositories:
+  - name: bjw-s
+    url: https://bjw-s-labs.github.io/helm-charts
+helmDefaults:
+    atomic: true
+    historyMax: 3
+    timeout: 1200
+releases:
+  - name: helmwave-deploy-app
+    namespace: common
+    create_namespace: true
+    chart:
+      name: bjw-s/app-template
+      version: 4.1.2
+    values:
+      - ./helmwave/values.yaml
